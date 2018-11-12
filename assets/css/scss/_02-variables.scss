@@ -45,15 +45,9 @@ $h3-font-size:                 2.4rem; // yes
 /**------------
  * HEADER
  ------------*/
-$header-height:                50px; // yes
-$header-bg-color:              $primary-color; // yes
-$logo-vertical-align:          middle; // yes
+$full-height: 100%;
+$li-height: 33%;
 
-$navbar-vertical-align:        middle; // yes
-$navbar-txt-align:             left; // yes
-$navbar-bg-color:              $primary-color; //(yes)
-$navbar-links-color:           lighten($primary-color, 50%); //(yes)
-$navbar-links-color-hover:     $base-color; //(yes)
-$navbar-links-bg-color:        lighten($primary-color, 70%); //(yes)
-$navbar-links-bg-color-hover:  lighten($primary-color, 20%); //(yes)
+
+
 
