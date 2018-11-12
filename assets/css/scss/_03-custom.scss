@@ -22,74 +22,75 @@ header {
   height: 80px;
   position: fixed;
   top: 0;
-  h1 {
-    position: relative;
-    float: left;
-    top: 30px;
-    padding-left: 40px;
-    z-index: 6; 
-    a{
-      font-size: 20px;
-      font-weight: 900;
-      font-family: sans-serif;
-      text-transform: uppercase;
-      display: block;
+  .head{
+    height: 80px;
+    box-sizing: border-box;
+    border-bottom: solid black 1px;   
+    h1 {
+      position: relative;
+      float: left;
+      top: 30px;
+      padding-left: 40px;
+      z-index: 6; 
+      a{
+        font-size: 20px;
+        font-weight: 900;
+        font-family: sans-serif;
+        text-transform: uppercase;
+        display: block;
+      }
     }
-  }
-  .burger{
-    position: relative;
-    float: right;
-    margin-top: 2px;
-    right: 40px;
-    z-index: 5;
-    cursor: pointer;
-    display: block;
-    padding: 20px;
-    transition: .6s cubic-bezier(0.075, 0.82, 0.165, 1) all;       
-     span{
+    .burger{
+      position: relative;
+      float: right;
+      margin-top: 2px;
+      right: 40px;
+      z-index: 5;
+      cursor: pointer;
       display: block;
-      width: 40px;
-      height: 2px;
-      margin:  7px 0;
-      background: $blackColor;
-      transition: .6s cubic-bezier(0.075, 0.82, 0.165, 1) all;
-    }    
-  }
-  &:hover{
-    .burger:not(.open){
-      margin-top: -4px; 
-    }
-    span{
-      margin: 10px 0;              
-    }     
-  }
-  .open{
-  margin-top: 18px;
-    span{
-      &:nth-child(1){
-        transform: rotate(45deg);
-        margin:  0;
-      }
-      &:nth-child(2){
-        transform: translateX(15px);
-        opacity: 0;
-      }
-      &:nth-child(3){
-        transform: rotate(-45deg);
-        margin: -14px 0;
-      }
+      padding: 20px;
+      transition: .6s cubic-bezier(0.075, 0.82, 0.165, 1) all;       
+       span{
+        display: block;
+        width: 40px;
+        height: 2px;
+        margin:  7px 0;
+        background: $blackColor;
+        transition: .6s cubic-bezier(0.075, 0.82, 0.165, 1) all;
+      }    
     }
     &:hover{
+      .burger:not(.open){
+        margin-top: -4px; 
+      }
       span{
+        margin: 10px 0;              
+      }     
+    }
+    .open{
+    margin-top: 18px;
+      span{
+        &:nth-child(1){
+          transform: rotate(45deg);
+          margin:  0;
+        }
+        &:nth-child(2){
+          transform: translateX(15px);
+          opacity: 0;
+        }
         &:nth-child(3){
-          margin: -20px 0;
+          transform: rotate(-45deg);
+          margin: -14px 0;
         }
       }
-    }      
-  }
-  .open{
-    &:hover{
-      transform: scale(1);
+      &:hover{
+        transform: scale(1);
+        span{
+          &:nth-child(3){
+            margin: -20px 0;
+          }
+        }
+      }      
     }
   }
   nav {
@@ -107,34 +108,30 @@ header {
     ul {
       width: 100%;
       text-align: center;
-      height: $full-height;
-      display: flex;
-      align-content: space-around;
-      flex-direction: column;
       li {
-        height: $li-height; 
-       /* padding: 10% 0; */
-        position: relative;
+        position: absolute;
         width: 100%;      
         opacity: 0;
         transition: .5s;
         transition-delay: 0s;
+        box-sizing: border-box;
         a {
           width: 100%;
           text-transform: uppercase;
           color: $blackColor;
           font-weight: 700;
           font-family: sans-serif;
-          display: block;          
+          display: block;
+          line-height: 30vh;        
         }
-        &:nth-child(1){
-          padding: 15% 0 7.5%; 
+        &:not(:last-child){
+          border-bottom: solid black 1px;
         }
         &:nth-child(2){
-          padding: 7.5% 0 7.5%; 
+          top: 30vh; 
         }
         &:nth-child(3){
-          padding: 7.5% 0 15%; 
+          top: 60vh; 
         }
       }    
     }
@@ -146,7 +143,7 @@ header {
      ul {
        li {
         opacity: 1;
-        transition: .8s cubic-bezier(0.075, 0.82, 0.165, 1) all;
+        transition: .8s cubic-bezier(0.8, 0.165, 0.82, 0.075) all;
       }
     }
   } 

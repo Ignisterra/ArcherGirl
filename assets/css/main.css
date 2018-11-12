@@ -888,23 +888,29 @@ header {
   top: 0;
 }
 /* line 25, scss/_03-custom.scss */
-header h1 {
+header .head {
+  height: 80px;
+  box-sizing: border-box;
+  border-bottom: solid black 1px;
+}
+/* line 29, scss/_03-custom.scss */
+header .head h1 {
   position: relative;
   float: left;
   top: 30px;
   padding-left: 40px;
   z-index: 6;
 }
-/* line 31, scss/_03-custom.scss */
-header h1 a {
+/* line 35, scss/_03-custom.scss */
+header .head h1 a {
   font-size: 20px;
   font-weight: 900;
   font-family: sans-serif;
   text-transform: uppercase;
   display: block;
 }
-/* line 39, scss/_03-custom.scss */
-header .burger {
+/* line 43, scss/_03-custom.scss */
+header .head .burger {
   position: relative;
   float: right;
   margin-top: 2px;
@@ -915,8 +921,8 @@ header .burger {
   padding: 20px;
   transition: 0.6s cubic-bezier(0.075, 0.82, 0.165, 1) all;
 }
-/* line 49, scss/_03-custom.scss */
-header .burger span {
+/* line 53, scss/_03-custom.scss */
+header .head .burger span {
   display: block;
   width: 40px;
   height: 2px;
@@ -924,42 +930,42 @@ header .burger span {
   background: #020304;
   transition: 0.6s cubic-bezier(0.075, 0.82, 0.165, 1) all;
 }
-/* line 59, scss/_03-custom.scss */
-header:hover .burger:not(.open) {
+/* line 63, scss/_03-custom.scss */
+header .head:hover .burger:not(.open) {
   margin-top: -4px;
 }
-/* line 62, scss/_03-custom.scss */
-header:hover span {
+/* line 66, scss/_03-custom.scss */
+header .head:hover span {
   margin: 10px 0;
 }
-/* line 66, scss/_03-custom.scss */
-header .open {
+/* line 70, scss/_03-custom.scss */
+header .head .open {
   margin-top: 18px;
 }
-/* line 69, scss/_03-custom.scss */
-header .open span:nth-child(1) {
+/* line 73, scss/_03-custom.scss */
+header .head .open span:nth-child(1) {
   transform: rotate(45deg);
   margin: 0;
 }
-/* line 73, scss/_03-custom.scss */
-header .open span:nth-child(2) {
+/* line 77, scss/_03-custom.scss */
+header .head .open span:nth-child(2) {
   transform: translateX(15px);
   opacity: 0;
 }
-/* line 77, scss/_03-custom.scss */
-header .open span:nth-child(3) {
+/* line 81, scss/_03-custom.scss */
+header .head .open span:nth-child(3) {
   transform: rotate(-45deg);
   margin: -14px 0;
 }
-/* line 84, scss/_03-custom.scss */
-header .open:hover span:nth-child(3) {
-  margin: -20px 0;
-}
-/* line 91, scss/_03-custom.scss */
-header .open:hover {
+/* line 86, scss/_03-custom.scss */
+header .head .open:hover {
   transform: scale(1);
 }
-/* line 95, scss/_03-custom.scss */
+/* line 89, scss/_03-custom.scss */
+header .head .open:hover span:nth-child(3) {
+  margin: -20px 0;
+}
+/* line 96, scss/_03-custom.scss */
 header nav {
   background: white;
   position: fixed;
@@ -973,26 +979,21 @@ header nav {
   overflow: hidden;
   visibility: hidden;
 }
-/* line 107, scss/_03-custom.scss */
+/* line 108, scss/_03-custom.scss */
 header nav ul {
   width: 100%;
   text-align: center;
-  height: 100%;
-  display: flex;
-  align-content: space-around;
-  flex-direction: column;
 }
-/* line 114, scss/_03-custom.scss */
+/* line 111, scss/_03-custom.scss */
 header nav ul li {
-  height: 30%;
-  /* padding: 10% 0; */
-  position: relative;
+  position: absolute;
   width: 100%;
   opacity: 0;
   transition: .5s;
   transition-delay: 0s;
+  box-sizing: border-box;
 }
-/* line 122, scss/_03-custom.scss */
+/* line 118, scss/_03-custom.scss */
 header nav ul li a {
   width: 100%;
   text-transform: uppercase;
@@ -1000,33 +1001,34 @@ header nav ul li a {
   font-weight: 700;
   font-family: sans-serif;
   display: block;
+  line-height: 30vh;
+}
+/* line 127, scss/_03-custom.scss */
+header nav ul li:not(:last-child) {
+  border-bottom: solid black 1px;
 }
 /* line 130, scss/_03-custom.scss */
-header nav ul li:nth-child(1) {
-  padding: 15% 0 7.5%;
+header nav ul li:nth-child(2) {
+  top: 30vh;
 }
 /* line 133, scss/_03-custom.scss */
-header nav ul li:nth-child(2) {
-  padding: 7.5% 0 7.5%;
-}
-/* line 136, scss/_03-custom.scss */
 header nav ul li:nth-child(3) {
-  padding: 7.5% 0 15%;
+  top: 60vh;
 }
-/* line 142, scss/_03-custom.scss */
+/* line 139, scss/_03-custom.scss */
 header nav.open-nav {
   visibility: visible;
   height: 100%;
   transition: 0.8s cubic-bezier(0.075, 0.82, 0.165, 1) all;
 }
-/* line 147, scss/_03-custom.scss */
+/* line 144, scss/_03-custom.scss */
 header nav.open-nav ul li {
   opacity: 1;
-  transition: 0.8s cubic-bezier(0.075, 0.82, 0.165, 1) all;
+  transition: 0.8s cubic-bezier(0.8, 0.165, 0.82, 0.075) all;
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 157, scss/_03-custom.scss */
+  /* line 154, scss/_03-custom.scss */
   .burger {
     margin: 1.2em 0;
   }
