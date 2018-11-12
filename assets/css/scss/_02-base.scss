@@ -1,0 +1,172 @@
+/**
+ * Required mixins before variable declarations
+ */
+
+@mixin declare-font-face($font-family, $font-filename, $font-weight : normal, $font-style :normal, $font-stretch : normal) {
+  @font-face {
+    font-family: '#{$font-family}';
+    src: /* url('../fonts/'+ $font-filename +'.woff') format('woff'),
+      url('../fonts/'+ $font-filename +'.ttf') format('truetype'), */
+      url('../fonts/'+ $font-filename +'.otf') format('opentype');
+    font-weight: $font-weight;
+    font-style: $font-style;
+    font-stretch: $font-stretch;
+  }
+}
+
+
+
+//==========================
+// GRILLE
+// =========================
+//
+
+@for $i from 1 through $maximum-columns {
+  .xl-col-#{$i}
+  {
+    width: columns($i);
+  }
+}
+
+@for $i from 0 through $maximum-columns - 1 {
+  .xl-offset-#{$i}
+  {
+    margin-left: columns($i);
+  }
+}
+
+
+//==========================
+// LAPTOP SCREENS
+//
+@media all and (max-width: $l-screen) {
+  [class*=xl-col] {
+    width: 100%;
+  }
+  @for $i from 1 through $maximum-columns {
+    .l-col-#{$i}
+    {
+      width: columns($i);
+    }
+  }
+  @for $i from 0 through $maximum-columns - 1 {
+    .l-offset-#{$i}
+    {
+      margin-left: columns($i);
+    }
+  }
+  .container {
+    max-width: $l-container-width;
+  }
+}
+
+
+//==========================
+// TABLETTES SCREENS
+//
+@media all and (max-width: $m-screen) {
+  [class*=l-col] {
+    width: 100%;
+  }
+  @for $i from 1 through $maximum-columns {
+    .m-col-#{$i}
+    {
+      width: columns($i);
+    }
+  }
+  @for $i from 0 through $maximum-columns - 1 {
+    .m-offset-#{$i}
+    {
+      margin-left: columns($i);
+    }
+  }
+  
+  //a mettre sur tous les pack pour ios
+  html {
+    overflow: hidden !important;
+  }
+  body {
+    overflow: auto;
+    background-color: transparent;
+    background-attachment: scroll;
+  }
+  //fin du css pour ios
+
+}
+
+
+//============================
+// TABLETTES SCREENS LANDSCAPE
+//
+@media only screen and (max-device-width: $m-screen-landscape) and (orientation: landscape) {
+  @for $i from 1 through $maximum-columns {
+    .ml-col-#{$i}
+    {
+      width: columns($i);
+    }
+  }
+  @for $i from 0 through $maximum-columns - 1 {
+    .ml-offset-#{$i}
+    {
+      margin-left: columns($i);
+    }
+  }
+  
+  //a mettre sur tous les pack pour ios
+  html {
+    overflow: hidden !important;
+  }
+  body {
+    overflow: auto;
+    background-color: transparent;
+    background-attachment: scroll;
+  }
+  //fin du css pour ios
+}
+
+
+//============================
+// SMARTPHONES SCREENS
+//
+@media all and (max-width: $s-screen) {
+  #topheader {
+    position: relative;
+  }
+  [class*=m-col] {
+    width: 100%;
+  }
+  @for $i from 1 through $maximum-columns {
+    .s-col-#{$i}
+    {
+      width: columns($i);
+    }
+  }
+  @for $i from 0 through $maximum-columns - 1 {
+    .s-offset-#{
+      $i
+    }
+    {
+      margin-left: columns($i);
+    }
+  }
+}
+
+
+//============================
+// SMARTPHONES SCREENS LANDSCAPE
+//
+@media all and (orientation: landscape) and (max-device-width: $s-screen) {
+  @for $i from 1 through $maximum-columns {
+    .sl-col-#{$i}
+    {
+      width: columns($i);
+    }
+  }
+  @for $i from 0 through $maximum-columns - 1 {
+    .sl-offset-#{$i}
+    {
+      margin-left: columns($i);
+    }
+  }
+}
+

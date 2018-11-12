@@ -1,10 +1,11 @@
 /* Reset css*/
 @import "compass/reset";
-/* Required mixins before variable declarations */
-@import '01-required';
 
 /* Variables */
-@import '02-variables';
+@import '01-variables';
+
+/* Required mixins before variable declarations // GRID */
+@import '02-base';
 
 /* theme files */
 @import '03-custom';
