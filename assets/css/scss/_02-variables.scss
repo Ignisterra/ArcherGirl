@@ -1,0 +1,59 @@
+/**------------
+ * GRID DEFINITION
+ ------------*/
+$wrapper-width:                100%;   // wrapper width (no)
+$xl-container-width:           1440px; // yes
+$l-container-width:            1140px; // yes
+$gutter-width:                 0;   // yes
+
+$maximum-columns:              12;     // max number of columns (no)
+
+/* Screen size breakpoints for media queries */
+$l-screen:                     1440px; // max-width for l screens (no)
+$m-screen:                     853px;  // max-width for m screens (no)
+$m-screen-landscape:           1024px; // max-width for m screens landscape (no)
+$s-screen:                     640px;  // max-width for s screens (no)
+
+
+/**------------
+ * COLORS
+ ------------*/
+$base-color:                   #fff; // yes
+$blackColor: 				   #020304;
+
+//fonts color
+$primary-color:                #000; // yes
+$secondary-color:              #6ed5b6; // yes
+$tertiary-color:               #fbf631; // yes
+$btn-nav-color:                $primary-color; // yes
+$btn-nav-bg-color:             none; // yes
+
+
+/**------------
+ * FONTS
+ ------------*/
+
+$base-font-family:             Helvetica, Arial, sans-serif; // yes
+$headings-font-family:         Helvetica, Arial, sans-serif; // yes
+$nav-font-family:              Helvetica, Arial, sans-serif; // yes
+
+$base-font-size:               16px; // no
+$h1-font-size:                 3.2rem; // yes
+$h2-font-size:                 2.8rem; // yes
+$h3-font-size:                 2.4rem; // yes
+
+/**------------
+ * HEADER
+ ------------*/
+$header-height:                50px; // yes
+$header-bg-color:              $primary-color; // yes
+$logo-vertical-align:          middle; // yes
+
+$navbar-vertical-align:        middle; // yes
+$navbar-txt-align:             left; // yes
+$navbar-bg-color:              $primary-color; //(yes)
+$navbar-links-color:           lighten($primary-color, 50%); //(yes)
+$navbar-links-color-hover:     $base-color; //(yes)
+$navbar-links-bg-color:        lighten($primary-color, 70%); //(yes)
+$navbar-links-bg-color-hover:  lighten($primary-color, 20%); //(yes)
+
