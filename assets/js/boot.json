@@ -1,0 +1,10 @@
+{
+	"files": [
+		"functions.js",
+		"mainMenu.js",
+		"level1.js",
+		"level2.js",
+		"level3.js",
+		"gameOver.js"
+	]
+}
