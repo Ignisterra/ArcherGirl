@@ -4,29 +4,18 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
   <link rel="stylesheet" type="text/css" href="assets/css/main.css">
 
   <title>Archer Girl - Home</title>
-  
+
+  <!--Libraries-->
   <script src="assets/js/lib/jquery.min.js"></script>
   <script src="assets/js/lib/phaser.min.js"></script>
 
   <!-- FIREBASE App is always required and must be first -->
   <script src="https://www.gstatic.com/firebasejs/5.5.6/firebase-app.js"></script>
 
-<<<<<<< HEAD
-=======
-  </div>
-</body>
-=======
-  <script src="assets/js/lib/jquery.min.js"></script>
-  <script src="assets/js/lib/phaser.min.js"></script>
 
-  <!-- FIREBASE App is always required and must be first -->
-  <script src="https://www.gstatic.com/firebasejs/5.5.6/firebase-app.js"></script>
-
->>>>>>> 7a196ba872f6b33da9e74bc56d2c35e786b3878e
   <!-- Add additional services that you want to use -->
   <script src="https://www.gstatic.com/firebasejs/5.5.6/firebase-auth.js"></script>
   <script src="https://www.gstatic.com/firebasejs/5.5.6/firebase-database.js"></script>
@@ -37,8 +26,9 @@
   <!-- javascript perso -->
   <script src="assets/js/firebase.js"></script>
   <script src="assets/js/main.js"></script>
-  <script type="module" src="assets/js/game.js"></script>
 
+  <script src="assets/js/functions.js"></script>
+  <script type="module" src="assets/js/game.js"></script>
 </head>
 <body>
 
@@ -83,21 +73,11 @@
         </div>
       </div>
     </div>
-    <div id="gcontainer" class="game">
-      
-    <!------------------ temporaire --------------------->
 
-      <form>
-        <input type="text" name="score" id="score">
-        <label for="score">
-          <button type="button" name="action" id="btScore"></button>
-      </form>
-
-
-
-    <!------------------ temporaire --------------------->
+    <div id="game_container" class="game">
 
     </div>
   </main>
+
 </body>
 </html>
