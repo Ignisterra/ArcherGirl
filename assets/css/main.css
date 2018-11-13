@@ -1130,7 +1130,7 @@ main #glauncher .window .scroller .content a:hover {
   transition: .3s ease;
 }
 /* line 239, scss/_03-custom.scss */
-main #gcontainer {
+main #game_container {
   display: none;
 }
 

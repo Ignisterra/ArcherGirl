@@ -26,8 +26,8 @@ $(function () {
   // lancer le jeu
   $('#launch').click(function(){
     $('#glauncher').hide();
-    $('#gcontainer').show();
-		$('html, body').stop(true, false).animate({scrollTop: $('#gcontainer').offset().top}, 1000 );
+    $('#game_container').show();
+		$('html, body').stop(true, false).animate({scrollTop: $('#game_container').offset().top}, 1000 );
   });
 
 
