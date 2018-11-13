@@ -888,12 +888,22 @@ main {
 }
 
 /* line 23, scss/_03-custom.scss */
-h1, h2, h3, a, p {
+h1, h2, h3, a, p, li {
   font-family: sans-serif;
 }
 
+/* line 26, scss/_03-custom.scss */
+h1, h2, h3 {
+  text-transform: uppercase;
+}
+
+/* line 29, scss/_03-custom.scss */
+p, li {
+  font-style: Helvetica, Arial, sans-serif;
+}
+
 /**************** HEADER ****************/
-/* line 28, scss/_03-custom.scss */
+/* line 34, scss/_03-custom.scss */
 header {
   background: #fff;
   width: 100%;
@@ -901,22 +911,23 @@ header {
   position: fixed;
   top: 0;
   transition: top 0.3s;
+  z-index: 500;
 }
-/* line 35, scss/_03-custom.scss */
+/* line 42, scss/_03-custom.scss */
 header .head {
   height: 80px;
   box-sizing: border-box;
   border-bottom: solid black 1px;
 }
-/* line 39, scss/_03-custom.scss */
+/* line 46, scss/_03-custom.scss */
 header .head h1 {
   position: relative;
   float: left;
   top: 30px;
   padding-left: 40px;
-  z-index: 6;
+  z-index: 506;
 }
-/* line 45, scss/_03-custom.scss */
+/* line 52, scss/_03-custom.scss */
 header .head h1 a {
   font-size: 20px;
   font-weight: 900;
@@ -924,19 +935,19 @@ header .head h1 a {
   text-transform: uppercase;
   display: block;
 }
-/* line 53, scss/_03-custom.scss */
+/* line 60, scss/_03-custom.scss */
 header .head .burger {
   position: relative;
   float: right;
   margin-top: 2px;
   right: 40px;
-  z-index: 5;
+  z-index: 505;
   cursor: pointer;
   display: block;
   padding: 20px;
   transition: 0.6s cubic-bezier(0.075, 0.82, 0.165, 1) all;
 }
-/* line 63, scss/_03-custom.scss */
+/* line 70, scss/_03-custom.scss */
 header .head .burger span {
   display: block;
   width: 40px;
@@ -945,42 +956,42 @@ header .head .burger span {
   background: #020304;
   transition: 0.6s cubic-bezier(0.075, 0.82, 0.165, 1) all;
 }
-/* line 72, scss/_03-custom.scss */
+/* line 79, scss/_03-custom.scss */
 header .head .burger:hover span {
   margin: 10px 0;
 }
-/* line 75, scss/_03-custom.scss */
+/* line 82, scss/_03-custom.scss */
 header .head .burger:hover:not(.open) {
   margin-top: -4px !important;
 }
-/* line 81, scss/_03-custom.scss */
+/* line 88, scss/_03-custom.scss */
 header .head .open {
   margin-top: 18px;
 }
-/* line 84, scss/_03-custom.scss */
+/* line 91, scss/_03-custom.scss */
 header .head .open span:nth-child(1) {
   transform: rotate(45deg);
   margin: 0;
 }
-/* line 88, scss/_03-custom.scss */
+/* line 95, scss/_03-custom.scss */
 header .head .open span:nth-child(2) {
   transform: translateX(15px);
   opacity: 0;
 }
-/* line 92, scss/_03-custom.scss */
+/* line 99, scss/_03-custom.scss */
 header .head .open span:nth-child(3) {
   transform: rotate(-45deg);
   margin: -18px 0;
 }
-/* line 98, scss/_03-custom.scss */
+/* line 105, scss/_03-custom.scss */
 header .head .open:hover {
   transform: scale(1);
 }
-/* line 101, scss/_03-custom.scss */
+/* line 108, scss/_03-custom.scss */
 header .head .open:hover span:nth-child(3) {
   margin: -30px 0;
 }
-/* line 108, scss/_03-custom.scss */
+/* line 115, scss/_03-custom.scss */
 header nav {
   background: white;
   position: fixed;
@@ -988,18 +999,18 @@ header nav {
   left: 0;
   width: 100%;
   height: 0;
-  z-index: 3;
+  z-index: 503;
   transition: .5s;
   transition-delay: .5s;
   overflow: hidden;
   visibility: hidden;
 }
-/* line 120, scss/_03-custom.scss */
+/* line 127, scss/_03-custom.scss */
 header nav ul {
   width: 100%;
   text-align: center;
 }
-/* line 123, scss/_03-custom.scss */
+/* line 130, scss/_03-custom.scss */
 header nav ul li {
   position: absolute;
   width: 100%;
@@ -1008,7 +1019,7 @@ header nav ul li {
   transition-delay: 0s;
   box-sizing: border-box;
 }
-/* line 130, scss/_03-custom.scss */
+/* line 137, scss/_03-custom.scss */
 header nav ul li a {
   width: 100%;
   text-transform: uppercase;
@@ -1018,50 +1029,107 @@ header nav ul li a {
   display: block;
   line-height: 30vh;
 }
-/* line 139, scss/_03-custom.scss */
+/* line 146, scss/_03-custom.scss */
 header nav ul li:not(:last-child) {
   border-bottom: solid black 1px;
 }
-/* line 142, scss/_03-custom.scss */
+/* line 149, scss/_03-custom.scss */
 header nav ul li:nth-child(2) {
   top: 30vh;
 }
-/* line 145, scss/_03-custom.scss */
+/* line 152, scss/_03-custom.scss */
 header nav ul li:nth-child(3) {
   top: 60vh;
 }
-/* line 151, scss/_03-custom.scss */
+/* line 158, scss/_03-custom.scss */
 header nav.open-nav {
   visibility: visible;
   height: 100%;
   transition: 0.8s cubic-bezier(0.075, 0.82, 0.165, 1) all;
 }
-/* line 156, scss/_03-custom.scss */
+/* line 163, scss/_03-custom.scss */
 header nav.open-nav ul li {
   opacity: 1;
   transition: 0.8s cubic-bezier(0.8, 0.165, 0.82, 0.075) all;
 }
 
 /**************** HEADER ****************/
-/* line 166, scss/_03-custom.scss */
+/* line 173, scss/_03-custom.scss */
 main {
   color: #fff;
   /* margin-top: 110px; */
 }
-/* line 169, scss/_03-custom.scss */
+/* line 176, scss/_03-custom.scss */
 main h2 {
   text-align: center;
   font-size: 2em;
   margin: 30px 0;
 }
-/* line 174, scss/_03-custom.scss */
+/* line 181, scss/_03-custom.scss */
 main .game {
   margin: auto;
   width: 800px;
   height: 600px;
-  border: solid white 1px;
+  border: solid  white 1px;
 }
-/* line 184, scss/_03-custom.scss */
+/* line 188, scss/_03-custom.scss */
+main #glauncher .window {
+  position: relative;
+  overflow: hidden;
+  height: 600px;
+  background-color: white;
+}
+/* line 193, scss/_03-custom.scss */
+main #glauncher .window .scroller {
+  position: absolute;
+  width: 800px;
+}
+/* line 196, scss/_03-custom.scss */
+main #glauncher .window .scroller .content {
+  z-index: 100;
+  padding: 50px;
+  position: relative;
+  text-align: center;
+  color: black;
+}
+/* line 202, scss/_03-custom.scss */
+main #glauncher .window .scroller .content h3 {
+  font-size: 1.6em;
+  margin: 30px 0 80px;
+}
+/* line 206, scss/_03-custom.scss */
+main #glauncher .window .scroller .content p {
+  text-align: left;
+  text-indent: 30px;
+  line-height: 1.5em;
+  margin-top: 10px;
+}
+/* line 212, scss/_03-custom.scss */
+main #glauncher .window .scroller .content ul {
+  text-align: left;
+  margin: 10px 0 50px 50px;
+  line-height: 1.5em;
+}
+/* line 217, scss/_03-custom.scss */
+main #glauncher .window .scroller .content a {
+  box-sizing: border-box;
+  background-color: white;
+  color: black;
+  margin: 70px 0;
+  font-size: 2em;
+  line-height: 3em;
+  padding: 7px 20px;
+  border: 3px solid black;
+  border-radius: 10% / 50%;
+  transition: .3s ease;
+}
+/* line 228, scss/_03-custom.scss */
+main #glauncher .window .scroller .content a:hover {
+  background-color: black;
+  color: white;
+  transition: .3s ease;
+}
+/* line 239, scss/_03-custom.scss */
 main #gcontainer {
   display: none;
 }

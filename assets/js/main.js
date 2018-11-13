@@ -6,13 +6,10 @@ $(function () {
     $(this).toggleClass('open');
     $('nav').toggleClass('open-nav', 600, "easeOutSine" );
     if ($('nav').hasClass("open-nav") == true) {
-    	console.log($('nav').hasClass("open-nav") == true);
     	hideMenu();
-    	$('nav').css('height', 'calc(100% - ' + $("header").css("height") + ')');
-    		
+    	$('nav').css('height', 'calc(100% - ' + $("header").css("height") + ')');   		
     }else{
     	$('nav').height(0);
-    	hideMenu();
     }
     
   });
@@ -22,17 +19,28 @@ $(function () {
   });
 
 
+/*  $('#button-two').click(function(){
+    $('#box-two').css("transform","translate(250px,0)");
+});*/
 
-/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+  // lancer le jeu
+  $('#launch').click(function(){
+    $('#glauncher').hide();
+    $('#gcontainer').show();
+		$('html, body').stop(true, false).animate({scrollTop: $('#gcontainer').offset().top}, 1000 );
+  });
+
+
 
 
 hideMenu();
 
 });
 
+
+/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
 function hideMenu() {
-		if($('nav').hasClass('open-nav') == false){
-		console.log($('nav').hasClass('open-nav') == false);
+		if($('nav').hasClass('open-nav') == false){		
 		var prevScrollpos = window.pageYOffset;
 		window.onscroll = function() {
 		  var currentScrollPos = window.pageYOffset;
@@ -46,8 +54,6 @@ function hideMenu() {
 
 		}else{
 			window.onscroll = function() {
-				console.log('fdsfsdf');
-			
 				$("header").css('top', 0);
 			}
 		}
