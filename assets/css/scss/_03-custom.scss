@@ -1,4 +1,5 @@
 /************ STYLE GENERAL *************/
+
 body{
   background-color: $blackColor;
 }
@@ -15,15 +16,24 @@ a{
   color: black;
   text-decoration: none;
 }
+
+main{
+  margin-top: $header-height + 30px;
+}
+h1, h2, h3, a, p{
+  font-family: sans-serif;
+}
 /**************** HEADER ****************/
+
 header {
   background: $base-color;
   width: 100%;
-  height: 80px;
+  height: $header-height;
   position: fixed;
   top: 0;
+  transition: top 0.3s;
   .head{
-    height: 80px;
+    height: $header-height;
     box-sizing: border-box;
     border-bottom: solid black 1px;   
     h1 {
@@ -50,23 +60,24 @@ header {
       display: block;
       padding: 20px;
       transition: .6s cubic-bezier(0.075, 0.82, 0.165, 1) all;       
-       span{
+      span{
         display: block;
         width: 40px;
         height: 2px;
         margin:  7px 0;
         background: $blackColor;
-        transition: .6s cubic-bezier(0.075, 0.82, 0.165, 1) all;
-      }    
-    }
-    &:hover{
-      .burger:not(.open){
-        margin-top: -4px; 
+        transition: .6s cubic-bezier(0.075, 0.82, 0.165, 1) all;        
       }
-      span{
-        margin: 10px 0;              
-      }     
-    }
+      &:hover{
+        span{
+          margin: 10px 0;
+        }
+        &:not(.open){
+          margin-top: -4px !important; 
+        }
+      }      
+    } 
+    
     .open{
     margin-top: 18px;
       span{
@@ -80,14 +91,15 @@ header {
         }
         &:nth-child(3){
           transform: rotate(-45deg);
-          margin: -14px 0;
+          margin: -18px 0;
         }
+
       }
       &:hover{
         transform: scale(1);
         span{
           &:nth-child(3){
-            margin: -20px 0;
+            margin: -30px 0;
           }
         }
       }      
@@ -96,7 +108,7 @@ header {
   nav {
     background: white;
     position: fixed;
-    top: 80px;
+    top: $header-height;
     left: 0;
     width: 100%;
     height: 0;
@@ -149,12 +161,32 @@ header {
   } 
 }
 
+/**************** HEADER ****************/
 
-@media only screen and (max-width: 768px){
-  .burger{
-    margin: 1.2em 0;
+main{
+  color: $base-color;
+  /* margin-top: 110px; */
+  h2{
+    text-align: center;
+    font-size: 2em;
+    margin: 30px 0;
+  }
+  .game{
+    margin: auto;
+    width: $game-width;
+    height: $game-height;
+    border: solid  white 1px
+  }
+  #glauncher{
+
+  }
+
+  #gcontainer{
+    display: none;
   }
 }
+
+
 
 /**
 * Mediaqueries

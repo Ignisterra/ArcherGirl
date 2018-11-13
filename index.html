@@ -11,11 +11,27 @@
   
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/phaser.min.js"></script>
+
+  <!-- FIREBASE App is always required and must be first -->
+  <script src="https://www.gstatic.com/firebasejs/5.5.6/firebase-app.js"></script>
+
+  <!-- Add additional services that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/5.5.6/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.5.6/firebase-database.js"></script>
+
+  <!-- Config Firebase -->
+  <script src="assets/js/config.js"></script>
+
+  <!-- javascript perso -->
+  <script src="assets/js/firebase.js"></script>
   <script src="assets/js/main.js"></script>
   <!-- <script src="assets/js/game.js"></script> -->
 
 </head>
 <body>
+
+  <!--------------------- HEADER ----------------------->
+
   <header>
     <div class="head clearfix">
       <h1><a href="index.html">Archer Girl</a></h1>
@@ -33,6 +49,29 @@
       </ul>
     </nav>
   </header>
+
+  <!------------------- MAIN CONTENT ------------------->
+
+  <main>
+    <h2>Archer Girl</h2>
+    <div id="glauncher" class="game">
+      <div class="window">
+        <div class="scroller">
+          <div class="content">
+            <h3>Archer girl</h3>
+            <p>Ayumi est une jeune fille de 16 ans qui vit et travail dans le quartier du shopping d'Ikebukuro a Tokyo. Elle se lève un matin dans un monde où tout le monde s’est transformé en pervert.
+            Elle va devoir :
+            _ défendre son immeuble et sort de chez elle,
+            _ elle cours dans la rue pour faire un truc
+            _ détruire définitivement le menace “pervers”.
+            </p>
+            <a href="javascript:void(0)"> Lancer le jeu </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="gcontainer" class="game"></div>
+  </main>
 
   
     

@@ -2,9 +2,9 @@
  * GRID DEFINITION
  ------------*/
 $wrapper-width:                100%;   // wrapper width (no)
-$xl-container-width:           1440px; // yes
-$l-container-width:            1140px; // yes
-$gutter-width:                 0;   // yes
+$xl-container-width:           1440px; 
+$l-container-width:            1140px; 
+$gutter-width:                 0;   
 
 $maximum-columns:              12;     // max number of columns (no)
 
@@ -18,36 +18,38 @@ $s-screen:                     640px;  // max-width for s screens (no)
 /**------------
  * COLORS
  ------------*/
-$base-color:                   #fff; // yes
+$base-color:                   #fff;
 $blackColor: 				   #020304;
 
 //fonts color
-$primary-color:                #000; // yes
-$secondary-color:              #6ed5b6; // yes
-$tertiary-color:               #fbf631; // yes
-$btn-nav-color:                $primary-color; // yes
-$btn-nav-bg-color:             none; // yes
+$primary-color:                #000;
+$secondary-color:              #6ed5b6;
+$tertiary-color:               #fbf631;
+$btn-nav-color:                $primary-color;
 
 
 /**------------
  * FONTS
  ------------*/
 
-$base-font-family:             Helvetica, Arial, sans-serif; // yes
-$headings-font-family:         Helvetica, Arial, sans-serif; // yes
-$nav-font-family:              Helvetica, Arial, sans-serif; // yes
+$base-font-family:             Helvetica, Arial, sans-serif; 
+$headings-font-family:         Helvetica, Arial, sans-serif; 
+$nav-font-family:              Helvetica, Arial, sans-serif; 
 
 $base-font-size:               16px; // no
-$h1-font-size:                 3.2rem; // yes
-$h2-font-size:                 2.8rem; // yes
-$h3-font-size:                 2.4rem; // yes
 
 /**------------
  * HEADER
  ------------*/
 $full-height:				   100%;
 $li-height: 				   30%;
+$header-height:				   80px;
 
 
+/**------------
+ * Main Game
+ ------------*/
 
-
+/* Game cotainer */
+$game-width:				   800px;
+$game-height:				   600px;
