@@ -6,12 +6,12 @@ $(function () {
     $(this).toggleClass('open');
     $('nav').toggleClass('open-nav', 600, "easeOutSine" );
     if ($('nav').hasClass("open-nav") == true) {
-    	hideMenu();
+    	
     	$('nav').css('height', 'calc(100% - ' + $("header").css("height") + ')');   		
     }else{
     	$('nav').height(0);
     }
-    
+    hideMenu();
   });
   //resize la hauteur du menu ouvert
   $(window).resize(function(){

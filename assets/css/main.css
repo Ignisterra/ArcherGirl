@@ -1,5 +1,5 @@
 /* Reset css*/
-/* line 5, ../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,45 +21,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -1063,7 +1063,7 @@ main {
 main h2 {
   text-align: center;
   font-size: 2em;
-  margin: 30px 0;
+  margin: 30px 0 80px;
 }
 /* line 181, scss/_03-custom.scss */
 main .game {
@@ -1071,20 +1071,21 @@ main .game {
   width: 800px;
   height: 600px;
   border: solid  white 1px;
+  margin-bottom: 70px;
 }
-/* line 188, scss/_03-custom.scss */
+/* line 189, scss/_03-custom.scss */
 main #glauncher .window {
   position: relative;
   overflow: hidden;
   height: 600px;
   background-color: white;
 }
-/* line 193, scss/_03-custom.scss */
+/* line 194, scss/_03-custom.scss */
 main #glauncher .window .scroller {
   position: absolute;
   width: 800px;
 }
-/* line 196, scss/_03-custom.scss */
+/* line 197, scss/_03-custom.scss */
 main #glauncher .window .scroller .content {
   z-index: 100;
   padding: 50px;
@@ -1092,25 +1093,25 @@ main #glauncher .window .scroller .content {
   text-align: center;
   color: black;
 }
-/* line 202, scss/_03-custom.scss */
+/* line 203, scss/_03-custom.scss */
 main #glauncher .window .scroller .content h3 {
   font-size: 1.6em;
   margin: 30px 0 80px;
 }
-/* line 206, scss/_03-custom.scss */
+/* line 207, scss/_03-custom.scss */
 main #glauncher .window .scroller .content p {
   text-align: left;
   text-indent: 30px;
   line-height: 1.5em;
   margin-top: 10px;
 }
-/* line 212, scss/_03-custom.scss */
+/* line 213, scss/_03-custom.scss */
 main #glauncher .window .scroller .content ul {
   text-align: left;
   margin: 10px 0 50px 50px;
   line-height: 1.5em;
 }
-/* line 217, scss/_03-custom.scss */
+/* line 218, scss/_03-custom.scss */
 main #glauncher .window .scroller .content a {
   box-sizing: border-box;
   background-color: white;
@@ -1123,13 +1124,13 @@ main #glauncher .window .scroller .content a {
   border-radius: 10% / 50%;
   transition: .3s ease;
 }
-/* line 228, scss/_03-custom.scss */
+/* line 229, scss/_03-custom.scss */
 main #glauncher .window .scroller .content a:hover {
   background-color: black;
   color: white;
   transition: .3s ease;
 }
-/* line 239, scss/_03-custom.scss */
+/* line 240, scss/_03-custom.scss */
 main #game_container {
   display: none;
 }

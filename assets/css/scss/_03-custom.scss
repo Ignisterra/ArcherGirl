@@ -176,13 +176,14 @@ main{
   h2{
     text-align: center;
     font-size: 2em;
-    margin: 30px 0;
+    margin: 30px 0 80px;
   }
   .game{
     margin: auto;
     width: $game-width;
     height: $game-height;
     border: solid  white 1px;
+    margin-bottom: 70px;
   }
   #glauncher{
     .window{
