@@ -16,10 +16,6 @@
  * Main Game
  ------------*/
 /* Game cotainer */
-/* Required mixins before variable declarations // GRID */
-/**
- * Required mixins before variable declarations
- */
 /* theme files */
 /**************** MAIN INDEX ****************/
 /* line 3, scss/_04-index.scss */
@@ -28,12 +24,6 @@ main {
   /* margin-top: 110px; */
 }
 /* line 6, scss/_04-index.scss */
-main h2 {
-  text-align: center;
-  font-size: 2em;
-  margin: 30px 0 80px;
-}
-/* line 11, scss/_04-index.scss */
 main .game {
   margin: auto;
   width: 800px;
@@ -41,19 +31,19 @@ main .game {
   border: solid  white 1px;
   margin-bottom: 70px;
 }
-/* line 19, scss/_04-index.scss */
+/* line 14, scss/_04-index.scss */
 main #glauncher .window {
   position: relative;
   overflow: hidden;
   height: 600px;
   background-color: white;
 }
-/* line 24, scss/_04-index.scss */
+/* line 19, scss/_04-index.scss */
 main #glauncher .window .scroller {
   position: absolute;
   width: 800px;
 }
-/* line 27, scss/_04-index.scss */
+/* line 22, scss/_04-index.scss */
 main #glauncher .window .scroller .content {
   z-index: 200;
   padding: 50px;
@@ -61,25 +51,25 @@ main #glauncher .window .scroller .content {
   text-align: center;
   color: black;
 }
-/* line 33, scss/_04-index.scss */
+/* line 28, scss/_04-index.scss */
 main #glauncher .window .scroller .content h3 {
   font-size: 1.6em;
   margin: 30px 0 80px;
 }
-/* line 37, scss/_04-index.scss */
+/* line 32, scss/_04-index.scss */
 main #glauncher .window .scroller .content p {
   text-align: left;
   text-indent: 30px;
   line-height: 1.5em;
   margin-top: 10px;
 }
-/* line 43, scss/_04-index.scss */
+/* line 38, scss/_04-index.scss */
 main #glauncher .window .scroller .content ul {
   text-align: left;
   margin: 10px 0 50px 50px;
   line-height: 1.5em;
 }
-/* line 48, scss/_04-index.scss */
+/* line 43, scss/_04-index.scss */
 main #glauncher .window .scroller .content a {
   box-sizing: border-box;
   background-color: white;
@@ -92,13 +82,13 @@ main #glauncher .window .scroller .content a {
   border-radius: 10% / 50%;
   transition: .3s ease;
 }
-/* line 59, scss/_04-index.scss */
+/* line 54, scss/_04-index.scss */
 main #glauncher .window .scroller .content a:hover {
   background-color: black;
   color: white;
   transition: .3s ease;
 }
-/* line 70, scss/_04-index.scss */
+/* line 65, scss/_04-index.scss */
 main #game_container {
   display: none;
 }

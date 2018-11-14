@@ -5,43 +5,57 @@ $(function() {
   let id;
   if ($('main').hasClass("hero") == true){
      console.log('yolo');
-  var catArr = [
-      "To Be Hero chinse anime trailer",
-      "To Be Hero chinse anime opening",
-      "To Be Hero chinse anime ending",
-      "To Be Hero chinse anime episode 1",
-      "To Be Hero chinse anime review",
-      "To Be Hero chinse anime ayumi"
+    var catArr = [
+      {
+        chaine : 'Opening',
+        titleY : 'To Be Hero',
+        url : 'WjtcOEphYDo'
+      },
+      {
+        chaine : 'Ending',
+        titleY : 'To Be Hero',
+        url : 'XBdIgSHeNYI'
+      },
+      {
+        chaine : 'Trailer',
+        titleY : 'To Be Hero',
+        url : 'FLl7-4wgShg'
+      }
+      
       
     ];
   }else if ($('main').hasClass("king") == true){
     console.log('yolo');
     var catArr = [
-      "The King's Avatar trailer",
-      "The King's Avatar opening",
-      "The King's Avatar ending",
-      "The King's Avatar episode 1",
-      "The King's Avatar fight scene",
-      "The King's Avatar review",
+      {
+        chaine : 'Opening',
+        titleY : "The King's Avatar",
+        url : 'O-eWo0eR0ik'
+      },
+      {
+        chaine : 'Ending',
+        titleY : "The King's Avatar",
+        url : '5JykHzrYx6s'
+      },
+      {
+        chaine : 'Trailer',
+        titleY : "The King's Avatar",
+        url : '3arFUIyA3l8'
+      }
     ];
   }
   
   let videos = [];
   let channelArr = [];
-  let vidArr = [];
   let timeArr = [];
   const crtOn = new Audio("http://www.jarrodyellets.com/sounds/CRTOn.mp3");
   const crtOff = new Audio("http://www.jarrodyellets.com/sounds/CRTOff.mp3");
   const chSound = new Audio("http://www.jarrodyellets.com/sounds/chSound.mp3");
-  const apiURL = "https://www.googleapis.com/youtube/v3/search";
-  const apiKey = "AIzaSyDVvGqIz6QI4X_Z7O2VHPuxNw5oaEtBTWk";
   let Channel = function(channel, id, description) {
     this.channel = channel;
     this.id = id;
     this.description = description;
   };
-
-  grabVideos();
 
   $(".power").on("click", function() {
     power = !power;
@@ -50,7 +64,7 @@ $(function() {
       crtOn.play();
       powerUp = true;
       videoArr = [];
-      insertVideos();
+      insertVideos(catArr);
       $(".channelScreen").append("**");
       $(".screen").addClass("crt");
       startUp();
@@ -93,7 +107,7 @@ $(function() {
     timeArr.push(
       setTimeout(function() {
         playVideo();
-      }, 3000)
+      }, 1500)
     );
   }
 
@@ -107,13 +121,14 @@ $(function() {
       $(".screen").empty();
       for (var j = 0; j < videos.length; j++) {
         let channelNum = j + 2;
+        console.log(videos[j].channel);
         divString +=
           "<div class='channelLine'><div class='channelNumber'>" +
           channelNum +
           ". " +
           videos[j].channel +
           ":  </div><div class='description'>" +
-          videos[j].description.substring(0, 30) +
+          videos[j].description +
           "...</div></div>";
       }
       $(".screen").append(
@@ -153,39 +168,15 @@ $(function() {
     }, 275);
   }
 
-  function grabVideos() {
-    vidArr = [];
-    for (var i = 0; i < catArr.length; i++) {
-      let q = catArr[i];
-      $.get(
-        apiURL,
-        {
-          part: "snippet, id",
-          q: q,
-          maxResults: 50,
-          safeSearch: "moderate",
-          videoLicense: "youtube",
-          relevanceLanguage: "fr",
-          type: "video",
-          key: apiKey
-        },
-        function(data) {
-          vidArr.push(data);
-          channelArr.push(q);
-        }
-      );
-    }
-  }
 
-  function insertVideos() {
+  function insertVideos(catArr) {
     videos = [];
-    for (var i = 0; i < channelArr.length; i++) {
-      let rand = Math.round(Math.random() * 49);
+    for (var i = 0; i < catArr.length; i++) {
       videos.push(
         new Channel(
-          channelArr[i],
-          vidArr[i].items[rand].id.videoId,
-          vidArr[i].items[rand].snippet.title
+          catArr[i].chaine,
+          catArr[i].url,
+          catArr[i].titleY
         )
       );
     }
