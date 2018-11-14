@@ -29,6 +29,7 @@ h1, h2, h3{
 p, li{
   font-style: $base-font-family;
 }
+
 /**************** HEADER ****************/
 
 header {
@@ -38,7 +39,7 @@ header {
   position: fixed;
   top: 0;
   transition: top 0.3s;
-  z-index: 500;
+  z-index: 1000;
   .head{
     height: $header-height;
     box-sizing: border-box;
@@ -48,7 +49,7 @@ header {
       float: left;
       top: 30px;
       padding-left: 40px;
-      z-index: 506; 
+      z-index: 1006; 
       a{
         font-size: 20px;
         font-weight: 900;
@@ -62,7 +63,7 @@ header {
       float: right;
       margin-top: 2px;
       right: 40px;
-      z-index: 505;
+      z-index: 1005;
       cursor: pointer;
       display: block;
       padding: 20px;
@@ -119,7 +120,7 @@ header {
     left: 0;
     width: 100%;
     height: 0;
-    z-index: 503;
+    z-index: 1003;
     transition: .5s;
     transition-delay: .5s;
     overflow: hidden;
@@ -141,7 +142,8 @@ header {
           font-weight: 700;
           font-family: sans-serif;
           display: block;
-          line-height: 30vh;        
+          line-height: 30vh;  
+          font-size: 2em;      
         }
         &:not(:last-child){
           border-bottom: solid black 1px;
@@ -168,7 +170,7 @@ header {
   } 
 }
 
-/**************** HEADER ****************/
+/**************** MAIN INDEX ****************/
 
 main{
   color: $base-color;
@@ -195,7 +197,7 @@ main{
         position: absolute;
         width: $game-width;
         .content{
-          z-index: 100;
+          z-index: 200;
           padding: 50px;
           position: relative;
           text-align: center;
@@ -244,6 +246,8 @@ main{
 
 
 
+
+
 /**
 * Mediaqueries
 */
@@ -271,6 +275,8 @@ main{
 @media all and (max-width: $m-screen) {
   
 }
+  
+
 
 
 
