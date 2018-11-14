@@ -165,7 +165,7 @@ $(function() {
           maxResults: 50,
           safeSearch: "moderate",
           videoLicense: "youtube",
-          relevanceLanguage: "en",
+          relevanceLanguage: "fr",
           type: "video",
           key: apiKey
         },
