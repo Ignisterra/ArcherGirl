@@ -58,6 +58,7 @@ body {
   position: relative;
   margin: 35px auto;  
   perspective: 35em;
+  cursor: pointer;
   
   .top {
     @include size(15%, 70%);
@@ -142,6 +143,7 @@ body {
       border-radius: 90px 93px 93px 93px / 15px 15px 15px 15px;
       overflow: hidden;
       text-align: center;
+      cursor: pointer;
       
       &-display {
         position: absolute;
@@ -161,6 +163,7 @@ body {
       h2 {
         position: absolute;
         top: 50%;
+        left: 4%;
         color: $screen-font-color;
         font-family: $screen-title-font, sans-serif;
       }
