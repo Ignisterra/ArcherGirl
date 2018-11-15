@@ -17,15 +17,20 @@
  ------------*/
 /* Game cotainer */
 /* theme files */
+/* line 1, scss/_05-anime.scss */
+body {
+  background-color: #a537fd;
+}
+
 /**************** MAIN ANIME ****************/
-/* line 3, scss/_05-anime.scss */
+/* line 8, scss/_05-anime.scss */
 .anime {
   width: 100%;
   height: 100vh;
   margin-top: 0;
   position: relative;
 }
-/* line 8, scss/_05-anime.scss */
+/* line 13, scss/_05-anime.scss */
 .anime h2 {
   position: relative;
   text-align: center;
@@ -36,7 +41,7 @@
   color: #020304;
   font-weight: 700;
 }
-/* line 18, scss/_05-anime.scss */
+/* line 23, scss/_05-anime.scss */
 .anime .conteneur {
   position: fixed;
   z-index: 400;
@@ -47,7 +52,7 @@
   display: flex;
   flex-wrap: wrap;
 }
-/* line 27, scss/_05-anime.scss */
+/* line 32, scss/_05-anime.scss */
 .anime .conteneur a {
   display: block;
   box-sizing: border-box;
@@ -61,12 +66,12 @@
   text-transform: uppercase;
   font-weight: 900;
 }
-/* line 41, scss/_05-anime.scss */
+/* line 46, scss/_05-anime.scss */
 .anime .conteneur .to_be_hero {
   background: url(../img/to-be-hero-anime.jpg) no-repeat center center;
   background-size: cover;
 }
-/* line 45, scss/_05-anime.scss */
+/* line 50, scss/_05-anime.scss */
 .anime .conteneur .kings_avatar {
   left: 50%;
   background: url(../img/kings-avatar.jpg) no-repeat center center;
@@ -74,7 +79,7 @@
 }
 
 /* TV PAGE DES ANIMES */
-/* line 58, scss/_05-anime.scss */
+/* line 63, scss/_05-anime.scss */
 .tv {
   position: relative;
   width: 700px;
@@ -94,7 +99,7 @@
   box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.75);
 }
 
-/* line 112, scss/_05-anime.scss */
+/* line 117, scss/_05-anime.scss */
 .outerRing {
   position: absolute;
   width: 680px;
@@ -108,7 +113,7 @@
   box-shadow: 0px 0px 16px 1px rgba(0, 0, 0, 0.75);
 }
 
-/* line 125, scss/_05-anime.scss */
+/* line 130, scss/_05-anime.scss */
 .middleRing {
   position: absolute;
   width: 500px;
@@ -129,7 +134,7 @@
   box-shadow: inset 0px 0px 32px 0px rgba(0, 0, 0, 0.75), 0px 0px 16px -1px rgba(0, 0, 0, 0.75);
 }
 
-/* line 190, scss/_05-anime.scss */
+/* line 195, scss/_05-anime.scss */
 .screen {
   position: absolute;
   z-index: 2;
@@ -147,7 +152,7 @@
   box-shadow: inset 0px 0px 10px 6px rgba(0, 0, 0, 0.9), 0px 0px 16px 0px rgba(0, 0, 0, 0.75), inset 0px 0px 125px 20px rgba(255, 255, 255, 0.5);
 }
 
-/* line 213, scss/_05-anime.scss */
+/* line 218, scss/_05-anime.scss */
 .movie {
   position: absolute;
   top: -10px;
@@ -157,7 +162,7 @@
   opacity: 0.7;
 }
 
-/* line 222, scss/_05-anime.scss */
+/* line 227, scss/_05-anime.scss */
 .sidePanel {
   position: absolute;
   width: 150px;
@@ -172,7 +177,7 @@
   box-shadow: 0px 0px 16px 1px rgba(0, 0, 0, 0.75), inset 0px 0px 16px 0px rgba(0, 0, 0, 0.75);
 }
 
-/* line 245, scss/_05-anime.scss */
+/* line 250, scss/_05-anime.scss */
 .channelBox {
   position: absolute;
   width: 142px;
@@ -184,7 +189,7 @@
   box-shadow: inset 0px 0px 60px 0px #372d23;
 }
 
-/* line 256, scss/_05-anime.scss */
+/* line 261, scss/_05-anime.scss */
 .channelScreen {
   position: absolute;
   display: flex;
@@ -202,7 +207,7 @@
   text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px #ff0000, 0 0 70px #ff0000, 0 0 80px #ff0000, 0 0 100px #ff0000;
 }
 
-/* line 275, scss/_05-anime.scss */
+/* line 280, scss/_05-anime.scss */
 .power {
   position: absolute;
   width: 15px;
@@ -224,7 +229,7 @@
   box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.75);
 }
 
-/* line 344, scss/_05-anime.scss */
+/* line 349, scss/_05-anime.scss */
 .powerOn {
   width: 16px;
   height: 16px;
@@ -233,7 +238,7 @@
   box-shadow: 0px 3px 15px 4px rgba(0, 0, 0, 0.75);
 }
 
-/* line 352, scss/_05-anime.scss */
+/* line 357, scss/_05-anime.scss */
 .powerText {
   position: absolute;
   top: 50px;
@@ -243,7 +248,7 @@
   font-family: "Montserrat", sans-serif;
 }
 
-/* line 361, scss/_05-anime.scss */
+/* line 366, scss/_05-anime.scss */
 .channelText {
   position: absolute;
   top: 49px;
@@ -253,7 +258,7 @@
   font-family: "Montserrat", sans-serif;
 }
 
-/* line 370, scss/_05-anime.scss */
+/* line 375, scss/_05-anime.scss */
 .channelSelect {
   display: flex;
   justify-content: flex-end;
@@ -266,7 +271,7 @@
   font-size: 14px;
 }
 
-/* line 382, scss/_05-anime.scss */
+/* line 387, scss/_05-anime.scss */
 .buttons {
   padding: 2px;
   margin: 2px;
@@ -280,18 +285,18 @@
   box-shadow: inset 0px -3px 3px 0px rgba(0, 0, 0, 0.75);
 }
 
-/* line 395, scss/_05-anime.scss */
+/* line 400, scss/_05-anime.scss */
 .buttons:active {
   transform: translate(0px, 3px);
   box-shadow: none;
 }
 
-/* line 400, scss/_05-anime.scss */
+/* line 405, scss/_05-anime.scss */
 .buttons:focus {
   outline: none;
 }
 
-/* line 404, scss/_05-anime.scss */
+/* line 409, scss/_05-anime.scss */
 .channelList {
   position: absolute;
   width: 200%;
@@ -306,7 +311,7 @@
   text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
-/* line 419, scss/_05-anime.scss */
+/* line 424, scss/_05-anime.scss */
 .channelList h4 {
   margin-top: 30px;
   position: relative;
@@ -315,21 +320,21 @@
   font-weight: 700;
 }
 
-/* line 427, scss/_05-anime.scss */
+/* line 432, scss/_05-anime.scss */
 .time {
   position: absolute;
   top: 43px;
   right: 425px;
 }
 
-/* line 433, scss/_05-anime.scss */
+/* line 438, scss/_05-anime.scss */
 .channelLine {
   display: flex;
   width: 100%;
   margin-top: 5px;
 }
 
-/* line 439, scss/_05-anime.scss */
+/* line 444, scss/_05-anime.scss */
 .channelNumber {
   border-top: 1px solid #0949cf;
   border-bottom: 1px solid #0949cf;
@@ -340,7 +345,7 @@
   overflow: hidden;
 }
 
-/* line 449, scss/_05-anime.scss */
+/* line 454, scss/_05-anime.scss */
 .description {
   position: relative;
   left: 0;
@@ -350,7 +355,7 @@
   width: 350px;
 }
 
-/* line 458, scss/_05-anime.scss */
+/* line 463, scss/_05-anime.scss */
 .channels {
   position: absolute;
   top: 25px;
@@ -365,7 +370,7 @@
   animation: channel 2.5s 1;
 }
 
-/* line 473, scss/_05-anime.scss */
+/* line 478, scss/_05-anime.scss */
 .startImage {
   position: absolute;
   top: 0;
@@ -377,12 +382,12 @@
   animation: fadeIn 5s 1;
 }
 
-/* line 484, scss/_05-anime.scss */
+/* line 489, scss/_05-anime.scss */
 .turnOff {
   animation: turnOff 0.3s 1;
 }
 
-/* line 488, scss/_05-anime.scss */
+/* line 493, scss/_05-anime.scss */
 .base {
   position: absolute;
   width: 500px;
@@ -500,7 +505,7 @@
     opacity: 0.24387;
   }
 }
-/* line 644, scss/_05-anime.scss */
+/* line 649, scss/_05-anime.scss */
 .crt::after {
   content: " ";
   display: block;
@@ -516,7 +521,7 @@
   animation: flicker 0.15s infinite;
 }
 
-/* line 658, scss/_05-anime.scss */
+/* line 663, scss/_05-anime.scss */
 .crt::before {
   content: " ";
   display: block;
@@ -531,7 +536,7 @@
   pointer-events: none;
 }
 
-/* line 678, scss/_05-anime.scss */
+/* line 683, scss/_05-anime.scss */
 .crtOff::before {
   content: " ";
   display: block;
@@ -546,7 +551,7 @@
   pointer-events: none;
 }
 
-/* line 698, scss/_05-anime.scss */
+/* line 703, scss/_05-anime.scss */
 crtOff::after {
   content: " ";
   display: block;
@@ -562,7 +567,7 @@ crtOff::after {
 }
 
 @media screen and (max-width: 700px) {
-  /* line 713, scss/_05-anime.scss */
+  /* line 718, scss/_05-anime.scss */
   .containbox {
     -moz-transform: scale(0.7);
     -o-transform: scale(0.7);

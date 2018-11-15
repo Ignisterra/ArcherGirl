@@ -18,7 +18,15 @@
 /* Game cotainer */
 /* theme files */
 /**************** MAIN INDEX ****************/
+<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css?family=Press+Start+2P");
+=======
+/* line 2, scss/_04-index.scss */
+body {
+  background-color: #020304;
+}
+
+>>>>>>> c108bff34efd2284b5a4a585e3ecc4d9d38a5104
 /* line 5, scss/_04-index.scss */
 main {
   color: #fff;
@@ -71,6 +79,7 @@ main #glauncher .window .scroller .content ul {
   line-height: 1.5em;
 }
 /* line 45, scss/_04-index.scss */
+<<<<<<< HEAD
 main #glauncher .window .scroller .content #launch {
   font-family: 'Press Start 2P', cursive;
   height: 90px;
@@ -85,6 +94,27 @@ main #glauncher .window .scroller .content #launch {
   animation: blink 1s  infinite;
 }
 /* line 63, scss/_04-index.scss */
+=======
+main #glauncher .window .scroller .content a {
+  box-sizing: border-box;
+  background-color: white;
+  color: black;
+  margin: 70px 0;
+  font-size: 2em;
+  line-height: 3em;
+  padding: 7px 20px;
+  border: 3px solid black;
+  border-radius: 10% / 50%;
+  transition: .3s ease;
+}
+/* line 56, scss/_04-index.scss */
+main #glauncher .window .scroller .content a:hover {
+  background-color: black;
+  color: white;
+  transition: .3s ease;
+}
+/* line 67, scss/_04-index.scss */
+>>>>>>> c108bff34efd2284b5a4a585e3ecc4d9d38a5104
 main #game_container {
   display: none;
 }

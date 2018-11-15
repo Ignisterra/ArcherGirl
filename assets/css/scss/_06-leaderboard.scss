@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron|Quicksand:500');
+$border-color: #4c4c4c;
+$border-size: 5px;
+$stripe-left-color: #BFD3C1;
+$stripe-center-color: #68A691;
+$stripe-right-color: #07BEB8;
+$screen-container-color: #4B5B61;
+$screen-container-shadow-color: rgba(0,0,0,.1);
+$screen-color: #313332;
+$screen-title-font: 'Orbitron', sans-serif;
+$screen-font-color: #e0e0e0;
+$joystick-color: #0F90C9;
+$alien-skin: #B4DEEC;
+$alien-eyes: #313332;
+
+$body-line-color: #1E2978;
+$body-bg-color: #B4DEEC; 
+$body-gradient:       repeating-linear-gradient(
+  0deg,
+  $body-bg-color,
+  $body-bg-color 15px,
+  lighten($body-bg-color,10%) 15px,
+  lighten($body-bg-color,10%) 16px /* determines size */
+);
+
+$copyright-color: #4B5B61;
+$dedication-color: #87aebc;
+$credits-color: lighten(#4B5B61, 20%);
+$credits-a-color: #3d9cbf;
+$copyright-span: #2995aa;
+
+//--------------------------------
+// Mixins
+//--------------------------------
+
+@mixin size($h: 100%, $w: 100%) {
+  height: $h;
+  width: $w;
+}
+
+@mixin position($t: 0%, $l: 0%) {
+  position: absolute;
+  top: $t;
+  left: $l;
+}
+//--------------------------------
+
+body {
+  background-image: $body-gradient;
+}
+
+//--------------------------------
+// Arcade Machine
+//--------------------------------
+
+.arcade-machine {
+  @include size(600px,700px);
+  position: relative;
+  margin: 35px auto;  
+  perspective: 35em;
+  
+  .top {
+    @include size(15%, 70%);
+    @include position(0%, 15%);
+    background: white;
+    border: $border-size solid $border-color;
+    z-index: 3;
+    &:before,
+    &:after {
+      @include size(100%, 4%);
+      position: absolute;
+      top: -9%;
+      background: white;
+      border: $border-size solid $border-color;
+      content: ' ';
+    }
+    &:before { left: -6%; }
+    &:after { right: -6%; }
+  }
+  
+  .stripes {
+    @include size(100%,10%);
+    @include position(0%, 45%);
+    background: $stripe-center-color;
+    &:before,
+    &:after {
+      @include size(100%, 100%);
+      position: absolute;
+      top: 0%;
+      content: ' ';
+    }
+    &:before { 
+      background: $stripe-left-color;
+      left: -100%; 
+    }
+    &:after { 
+      background: $stripe-right-color;
+      right: -100%; 
+    }
+  }
+  
+  &>.shadow {
+    @include size(85%, 65%);
+    @include position(2%, 19%);
+    background: darken($screen-container-color,0%);
+    box-shadow: 0 0 60px $screen-container-color;
+    z-index:-1;
+  }
+  
+  .screen-container {
+    @include size(50%, 62%);
+    @include position(15%, 19%);
+    background: darken($screen-container-color,0%);
+    border: $border-size solid $border-color;
+    z-index:1;
+    
+    &:before,
+    &:after {
+      @include size(100%, 4%);
+      position: absolute;
+      top: -2%;
+      background: white;
+      content: ' ';
+      border: $border-size solid $border-color;
+      z-index: 2;
+    }
+    &:before { left: -6%; }
+    &:after { right: -6%; }
+    
+    .shadow {
+      @include size(8%,110%);
+      @include position(0%, -5%);
+      background: $screen-container-shadow-color;
+      z-index: 4;
+    }
+    
+    .screen {
+      @include size(70%,75%);
+      @include position(15%, 11%);
+      background: $screen-color;
+      border: $border-size solid $border-color;
+      border-radius: 90px 93px 93px 93px / 15px 15px 15px 15px;
+      overflow: hidden;
+      text-align: center;
+      cursor: pointer;
+      
+      &-display {
+        position: absolute;
+        width: 100%;
+        height: 200%;
+        margin-top: -10%;
+        background-image: repeating-linear-gradient(
+          0deg,
+          $screen-color,
+          $screen-color 15px,
+          lighten($screen-color,10%) 15px,
+          lighten($screen-color,10%) 16px /* determines size */
+        );
+        animation: translate 1s infinite;
+      }
+      
+      h2 {
+        position: absolute;
+        top: 50%;
+        left: 4%;
+        color: $screen-font-color;
+        font-family: $screen-title-font, sans-serif;
+      }
+    }
+    
+    .joystick {
+      @include size(6%, 5%);
+      background: $joystick-color;
+      position: absolute;
+      top: 91%;
+      left: 17%;
+      border-radius: 50%;
+      border: $border-size solid $border-color;
+      z-index: 3;
+      &:before {
+        @include size(90%, 65%);
+        position: absolute;
+        top: 7%;
+        left: 32%;
+        background: darken($joystick-color,7%);
+        content: '';
+        border-radius: 50%;
+      }
+      .stick {
+        @include size(200%, 40%);
+        position: absolute;
+        top: 100%;
+        left: 30%;
+        background: $border-color;
+        content: '';
+          &:before {
+          @include size(100%, 150%);
+          transform: rotate(90deg);
+          position: absolute;
+          top: 50%;
+          left: -20%;
+          background: $border-color;
+          content: '';
+          
+        }
+      }
+  }
+} //End Screen Container
+  
+  .board {
+    @include size(20%, 66%);
+    @include position(61%, 18.2%);
+    background: $screen-container-color;
+    transform: rotateX(70deg);
+    &:before,
+    &:after {
+      @include size(92%, 4%);
+      position: absolute;
+      top: -2%;
+      background: white;
+      content: ' ';
+      border: $border-size solid $border-color;
+      z-index: 2;
+    }
+    &:before { left: -6%; }
+    &:after { right: -6%; }
+    
+    .button {
+      @include size(15%, 6%);
+      position: absolute;
+      top: 40%;
+      left: 30%;
+      
+      border-radius: 50%;
+      border: $border-size solid $border-color;
+    }
+    .button-a { 
+      background: $stripe-left-color;
+      left: 40%; 
+    }
+    .button-b { 
+      background: $stripe-center-color;
+      left: 55%; 
+    }
+    .button-c { 
+      background: $stripe-right-color;
+      left: 70%; 
+    }
+  }
+  
+  .bottom {
+    @include size(10%, 71%);
+    @include position(76%, 14.5%);
+    background: white;
+    border: $border-size solid $border-color;
+    &:before,
+    &:after {
+      @include size(98%, 4%);
+      position: absolute;
+      top: -9%;
+      background: white;
+      content: ' ';
+      border: $border-size solid $border-color;
+      z-index: 2;
+    }
+    &:before { left: -5.8%; }
+    &:after { right: -5.9%; }
+  }
+  
+} 
+
+
+//--------------------------------
+// Alien
+//--------------------------------
+
+.alien-container {
+  position: absolute;
+  top: 20%;
+  left: 35%;
+  height: 30%;
+  width: 30%;
+  animation: bounce .8s infinite;
+}
+
+.alien {
+  
+  .ear {
+    position: absolute;
+    top: 14%;
+    height: 13%;
+    width: 10%;
+    background: $alien-skin;
+    &-left { left: 35%; }
+    &-right { right: 35%; }
+    &:before {
+      position: absolute;
+      top: -100%;
+      height: 100%;
+      width: 100%;
+      background: $alien-skin;
+      content: '';
+    }
+    &-left:before { left: -100%; }
+    &-right:before { right: -100%;}
+  }
+  
+  .head-top {
+    position: absolute;
+    top: 26%;
+    left: 20%;
+    height: 15%;
+    width: 60%;
+    background: $alien-skin;
+  }
+  
+  .head {
+    position: absolute;
+    top: 40%;
+    left: 11.5%;
+    height: 15%;
+    width: 77%;
+    background: $alien-skin;
+    .eye {
+      position: absolute;
+      top: -5%;
+      height: 77%;
+      width: 12%;
+      background: $alien-eyes;
+      &-left {left: 25%; }
+      &-right {right: 25%; }
+    }
+  }
+  
+  .body {
+    position: absolute;
+    top: 54%;
+    left: 10%;
+    height: 20%;
+    width: 80%;
+    background: $alien-skin;
+    
+    &:before,
+    &:after {
+      height: 220%;
+      width: 13%;
+      background: $alien-skin;
+      position: absolute;
+      content: '';
+    }
+    &:before { left: -10%; }
+    &:after { right: -10%; }
+  }
+  
+  .arm {
+    position: absolute;
+    top: 85%;
+    height: 13%;
+    width: 10%;
+    background: $alien-skin;
+    &-left { left: 35%; }
+    &-right { right: 35%; }
+    &:before {
+      position: absolute;
+      top: -100%;
+      height: 100%;
+      width: 100%;
+      background: $alien-skin;
+      content: '';
+    }
+    &-left:before { left: -100%; }
+    &-right:before { right: -100%;}
+  }
+  
+}
+
+//--------------------------------
+// Footer
+//--------------------------------
+
+footer {
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  margin-top: -30px;
+  h3 {
+    color: $copyright-color;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    span {
+      color: $copyright-span;
+    }
+  }
+  h4 {
+    color: $dedication-color;
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  p {
+    font-size: .9rem;
+    color: $credits-color;
+    a {
+      color: $credits-a-color;
+      
+    }
+  }
+}
+
+//--------------------------------
+// Animations
+//--------------------------------
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes translate {
+  from {
+    top: 0;
+  }
+  to {
+    top: 10%;
+  }
+}
