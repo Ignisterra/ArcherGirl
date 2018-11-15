@@ -1,4 +1,5 @@
 /* Reset css*/
+@import url("https://fonts.googleapis.com/css?family=Orbitron");
 /* line 5, ../../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -88,13 +89,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
  */
 /* theme files */
 /************ STYLE GENERAL *************/
-/* line 4, scss/_03-custom.scss */
-body {
-  background-color: #020304;
-  background: url("../../assets/img/RetroArcade.jpg");
-}
-
-/* line 10, scss/_03-custom.scss */
+/* line 5, scss/_03-custom.scss */
 .clearfix:after {
   clear: both;
   content: '.';
@@ -103,33 +98,33 @@ body {
   visibility: hidden;
 }
 
-/* line 18, scss/_03-custom.scss */
+/* line 13, scss/_03-custom.scss */
 a {
   color: black;
   text-decoration: none;
 }
 
-/* line 23, scss/_03-custom.scss */
+/* line 18, scss/_03-custom.scss */
 main {
   margin-top: 110px;
 }
 
-/* line 26, scss/_03-custom.scss */
+/* line 21, scss/_03-custom.scss */
 h1, h2, h3, a, p, li {
   font-family: sans-serif;
 }
 
-/* line 29, scss/_03-custom.scss */
+/* line 24, scss/_03-custom.scss */
 h1, h2, h3 {
   text-transform: uppercase;
 }
 
-/* line 32, scss/_03-custom.scss */
+/* line 27, scss/_03-custom.scss */
 p, li {
   font-style: Helvetica, Arial, sans-serif;
 }
 
-/* line 35, scss/_03-custom.scss */
+/* line 30, scss/_03-custom.scss */
 h2 {
   text-align: center;
   font-size: 2em;
@@ -138,7 +133,7 @@ h2 {
 }
 
 /**************** HEADER ****************/
-/* line 44, scss/_03-custom.scss */
+/* line 39, scss/_03-custom.scss */
 header {
   background: #fff;
   width: 100%;
@@ -148,13 +143,13 @@ header {
   transition: top 0.3s;
   z-index: 1000;
 }
-/* line 52, scss/_03-custom.scss */
+/* line 47, scss/_03-custom.scss */
 header .head {
   height: 80px;
   box-sizing: border-box;
   border-bottom: solid black 1px;
 }
-/* line 56, scss/_03-custom.scss */
+/* line 51, scss/_03-custom.scss */
 header .head h1 {
   position: relative;
   float: left;
@@ -162,7 +157,7 @@ header .head h1 {
   padding-left: 40px;
   z-index: 1006;
 }
-/* line 62, scss/_03-custom.scss */
+/* line 57, scss/_03-custom.scss */
 header .head h1 a {
   font-size: 20px;
   font-weight: 900;
@@ -170,7 +165,7 @@ header .head h1 a {
   text-transform: uppercase;
   display: block;
 }
-/* line 70, scss/_03-custom.scss */
+/* line 65, scss/_03-custom.scss */
 header .head .burger {
   position: relative;
   float: right;
@@ -182,7 +177,7 @@ header .head .burger {
   padding: 20px;
   transition: 0.6s cubic-bezier(0.075, 0.82, 0.165, 1) all;
 }
-/* line 80, scss/_03-custom.scss */
+/* line 75, scss/_03-custom.scss */
 header .head .burger span {
   display: block;
   width: 40px;
@@ -191,42 +186,42 @@ header .head .burger span {
   background: #020304;
   transition: 0.6s cubic-bezier(0.075, 0.82, 0.165, 1) all;
 }
-/* line 89, scss/_03-custom.scss */
+/* line 84, scss/_03-custom.scss */
 header .head .burger:hover span {
   margin: 10px 0;
 }
-/* line 92, scss/_03-custom.scss */
+/* line 87, scss/_03-custom.scss */
 header .head .burger:hover:not(.open) {
   margin-top: -4px !important;
 }
-/* line 98, scss/_03-custom.scss */
+/* line 93, scss/_03-custom.scss */
 header .head .open {
   margin-top: 18px;
 }
-/* line 101, scss/_03-custom.scss */
+/* line 96, scss/_03-custom.scss */
 header .head .open span:nth-child(1) {
   transform: rotate(45deg);
   margin: 0;
 }
-/* line 105, scss/_03-custom.scss */
+/* line 100, scss/_03-custom.scss */
 header .head .open span:nth-child(2) {
   transform: translateX(15px);
   opacity: 0;
 }
-/* line 109, scss/_03-custom.scss */
+/* line 104, scss/_03-custom.scss */
 header .head .open span:nth-child(3) {
   transform: rotate(-45deg);
   margin: -18px 0;
 }
-/* line 115, scss/_03-custom.scss */
+/* line 110, scss/_03-custom.scss */
 header .head .open:hover {
   transform: scale(1);
 }
-/* line 118, scss/_03-custom.scss */
+/* line 113, scss/_03-custom.scss */
 header .head .open:hover span:nth-child(3) {
   margin: -30px 0;
 }
-/* line 125, scss/_03-custom.scss */
+/* line 120, scss/_03-custom.scss */
 header nav {
   background: white;
   position: fixed;
@@ -240,12 +235,12 @@ header nav {
   overflow: hidden;
   visibility: hidden;
 }
-/* line 137, scss/_03-custom.scss */
+/* line 132, scss/_03-custom.scss */
 header nav ul {
   width: 100%;
   text-align: center;
 }
-/* line 140, scss/_03-custom.scss */
+/* line 135, scss/_03-custom.scss */
 header nav ul li {
   position: absolute;
   width: 100%;
@@ -254,7 +249,7 @@ header nav ul li {
   transition-delay: 0s;
   box-sizing: border-box;
 }
-/* line 147, scss/_03-custom.scss */
+/* line 142, scss/_03-custom.scss */
 header nav ul li a {
   width: 100%;
   text-transform: uppercase;
@@ -265,28 +260,37 @@ header nav ul li a {
   line-height: 30vh;
   font-size: 2em;
 }
-/* line 157, scss/_03-custom.scss */
+/* line 152, scss/_03-custom.scss */
 header nav ul li:not(:last-child) {
   border-bottom: solid black 1px;
 }
-/* line 160, scss/_03-custom.scss */
+/* line 155, scss/_03-custom.scss */
 header nav ul li:nth-child(2) {
   top: 30vh;
 }
-/* line 163, scss/_03-custom.scss */
+/* line 158, scss/_03-custom.scss */
 header nav ul li:nth-child(3) {
   top: 60vh;
 }
-/* line 169, scss/_03-custom.scss */
+/* line 164, scss/_03-custom.scss */
 header nav.open-nav {
   visibility: visible;
   height: 100%;
   transition: 0.8s cubic-bezier(0.075, 0.82, 0.165, 1) all;
 }
-/* line 174, scss/_03-custom.scss */
+/* line 169, scss/_03-custom.scss */
 header nav.open-nav ul li {
   opacity: 1;
   transition: 0.8s cubic-bezier(0.8, 0.165, 0.82, 0.075) all;
+}
+
+/**************** FOOTER ****************/
+/* line 179, scss/_03-custom.scss */
+footer {
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  height: 50px;
 }
 
 /**

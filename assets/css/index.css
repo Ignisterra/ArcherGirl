@@ -19,17 +19,22 @@
 /* theme files */
 /**************** MAIN INDEX ****************/
 @import url("https://fonts.googleapis.com/css?family=Press+Start+2P");
-/* line 7, scss/_04-index.scss */
+@font-face {
+  font-family: 'retganon';
+  src: url("../../assets/fonts/retganon.ttf");
+}
+/* line 12, scss/_04-index.scss */
 body {
-  background-color: #020304;
+  background: url("../../assets/img/RetroArcade.jpg") no-repeat center center;
+  background-size: cover;
 }
 
-/* line 11, scss/_04-index.scss */
+/* line 17, scss/_04-index.scss */
 main {
   color: #fff;
-  /* margin-top: 110px; */
+  margin-top: 110px;
 }
-/* line 14, scss/_04-index.scss */
+/* line 20, scss/_04-index.scss */
 main .game {
   margin: auto;
   width: 800px;
@@ -37,19 +42,19 @@ main .game {
   border: solid  white 1px;
   margin-bottom: 70px;
 }
-/* line 22, scss/_04-index.scss */
+/* line 28, scss/_04-index.scss */
 main #glauncher .window {
   position: relative;
   overflow: hidden;
   height: 600px;
   background: repeating-linear-gradient(to bottom, #0f0a1e, #0f0a1e 2px, #140e29 2px, #140e29 4px);
 }
-/* line 27, scss/_04-index.scss */
+/* line 33, scss/_04-index.scss */
 main #glauncher .window .scroller {
   position: absolute;
   width: 800px;
 }
-/* line 30, scss/_04-index.scss */
+/* line 36, scss/_04-index.scss */
 main #glauncher .window .scroller .content {
   z-index: 200;
   padding: 50px;
@@ -57,25 +62,33 @@ main #glauncher .window .scroller .content {
   text-align: center;
   color: #fff;
 }
-/* line 36, scss/_04-index.scss */
-main #glauncher .window .scroller .content h3 {
-  font-size: 1.6em;
-  margin: 30px 0 80px;
+/* line 42, scss/_04-index.scss */
+main #glauncher .window .scroller .content h2 {
+  font-size: 2em;
+  margin: 20px 0 60px;
+  font-family: Orbitron;
 }
-/* line 40, scss/_04-index.scss */
+/* line 47, scss/_04-index.scss */
 main #glauncher .window .scroller .content p {
   text-align: left;
-  text-indent: 30px;
-  line-height: 1.5em;
-  margin-top: 10px;
+  text-indent: 10px;
+  line-height: 1.3em;
+  margin-top: 20px;
+  font-family: 'Orbitron';
+  letter-spacing: 2px;
+  text-align: justify;
 }
-/* line 46, scss/_04-index.scss */
+/* line 56, scss/_04-index.scss */
 main #glauncher .window .scroller .content ul {
   text-align: left;
-  margin: 10px 0 50px 50px;
+  margin: 40px 0 50px 50px;
   line-height: 1.5em;
 }
-/* line 51, scss/_04-index.scss */
+/* line 61, scss/_04-index.scss */
+main #glauncher .window .scroller .content li {
+  font-family: Orbitron;
+}
+/* line 64, scss/_04-index.scss */
 main #glauncher .window .scroller .content #launch {
   font-family: 'Press Start 2P', cursive;
   height: 90px;
@@ -88,8 +101,14 @@ main #glauncher .window .scroller .content #launch {
   letter-spacing: 5px;
   text-shadow: -2px 0 0 #fdff2a, -4px 0 0 #df4a42, 2px 0 0 #91fcfe, 4px 0 0 #4405fc;
   animation: blink 1s  infinite;
+  border: 3px solid #fff;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  padding: 20px;
 }
-/* line 69, scss/_04-index.scss */
+/* line 88, scss/_04-index.scss */
 main #game_container {
   display: none;
 }
