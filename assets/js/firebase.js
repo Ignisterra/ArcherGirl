@@ -21,29 +21,24 @@ async function sendScore(){
   console.log(tab);
   });
   var tablength = tab.length;
-/*  if(tab[0].item == 'undified'){
-  	tablength = 0;
-  	console.log('yolo');
-  }*/
+  //si il n'y a aucun score
 	if (tablength == 0) {
 		pos = 1;
 		await firebase.database().ref('/leaderBoard/' + pos).set({
 				Pos : 1,
 			  Name: name,
 			  Score: score,	
-
 		});
-		/*console.log('tab = 0');	 */
-	/*window.location.replace("leader_board.html");*/
+	window.location.replace("leader_board.html");
 	return;
 	}
-	/*console.log(tablength);*/
+	// si score inférieur au 10eme
 	var lowScore = parseInt(tab[tablength-1].Score);
 	if(lowScore > score && tablength >= 9){
 		tab=[];
-		/*console.log('score faiv');	*/ 
-	      	/*window.location.replace("leader_board.html");*/
+	  window.location.replace("leader_board.html");
   	return;
+  // si nouveau score inférieir mais moins de 10 score	
   }else if(lowScore > score){
   	var player = {
 			Pos : tablength,
@@ -51,7 +46,6 @@ async function sendScore(){
 	    Score: score		  
 		};
 		tab[tablength] = player;
-		console.log('nouvscore');
 			pos = tablength + 1;
 			console.log(pos);
 	 		await firebase.database().ref('/leaderBoard/' + pos).set({
@@ -59,7 +53,7 @@ async function sendScore(){
 		    Name: name,
 		    Score: score	  
 			});
-			console.log('icici');
+	// nouveau score dans le leaderboard		
   }else{
   	console.log(tablength);
   	var player = {
@@ -85,9 +79,6 @@ async function sendScore(){
           tab[j]=tab[i];
           tab[i]=temp;
         }
-        /*else{
-        	break;
-        }*/
       j--;
     }
     console.log('ici');
@@ -103,7 +94,7 @@ async function sendScore(){
   }
 
   tab = [];
-  showList();         
+  window.location.replace("leader_board.html");         
 }
 
 // Affichage Leader Board 
@@ -112,7 +103,11 @@ async function showList(){
   await firebase.database().ref('leaderBoard/').once('value', function(snapshot) {
     snapshot.forEach(function(childSnapshot, i) {
       var item = childSnapshot.val();
-      $('#lead').append('<li class="item">pos :'+(item.Pos)+' Nom : '+item.Name+'<span> Score : '+item.Score+'</span></li>');
+      $('#lead').append(
+      	'<li class="item">'+
+      		'<span>#' +(item.Pos)+ '</span>'+
+      		'<span> Nom : '+item.Name+ '</span>'+
+      		'<span> Score : '+item.Score+ '</span></li>');
     });
   });         
 }
