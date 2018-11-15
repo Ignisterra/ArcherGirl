@@ -16,7 +16,7 @@ class level1 extends Phaser.Scene{
     }
 
     preload(){
-        this.load.image('level1_background', 'assets/game_assets/background/level1_background_temp.png');
+        this.load.image('level1_background', 'assets/game_assets/background/level1_background_temp2.png');
         this.load.spritesheet('ayumi', 'assets/game_assets/sprites/ayumi_temp.png', { 
             frameWidth: 32, 
             frameHeight: 48 
