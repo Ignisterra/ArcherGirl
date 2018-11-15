@@ -2,9 +2,34 @@ body{
   background: url("../../assets/img/mur.jpg") no-repeat center center;
   background-size: cover;
 }
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
 
 
 /**************** MAIN ANIME ****************/
+
+@function text-retro($color: black, $depth: 13) {
+  $shadows: (1px 1px $color,);
+  @for $i from 2 through $depth {
+    $shadows: append($shadows, ($i*1px) ($i*1px) $color, comma);
+  }
+  @return $shadows;
+}
+
+
+// body{background:#404040;}
+.conteneur{
+  width: 400px; 
+  height: 300px; 
+  border: 1px solid #303030;
+  margin: 0 auto;
+  background: hsl(0, 50%, 45%);
+}
+.retro {
+  color: white; 
+  font-size: 4em; 
+  text-shadow: text-retro();
+  letter-spacing: 5px;
+}
 
 .anime{
   width: 100%;
@@ -12,7 +37,7 @@ body{
   margin-top: 0;
   position: relative;
   h2{
-    font-family: Orbitron;
+    font-family: 'Press Start 2P', cursive;
     position: relative;
     text-align: center;
     font-size: 2.5em;
@@ -21,7 +46,29 @@ body{
     z-index: 500;
     color: $blackColor;
     font-weight: 700;
+    font-family: 'Press Start 2P', cursive;
+    height: 90px;
+    // color: #fff;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: 5px;
+    text-shadow: -2px 0 0 #fdff2a, -4px 0 0 #df4a42, 2px 0 0 #91fcfe, 4px 0 0 #4405fc;
+    animation: blink 1s  infinite;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px; 
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    padding: 20px;
+    margin-top: 90px;
   }
+@keyframes blink {
+  0% {opacity: 0}
+  49%{opacity: 0}
+  50% {opacity: 1}
+}
   .conteneur{
     position: fixed;
     z-index: 400;
@@ -41,7 +88,7 @@ body{
       float: right;
       line-height: 100vh;
       padding-left: 15%; 
-      font-size: 1.8em;
+      font-size: 2em;
       text-transform: uppercase;
       font-weight: 900;
     }
@@ -51,9 +98,8 @@ body{
       background-size: cover; 
     }
     .kings_avatar{
-
-        left: 50%;
-      background: url(../img/kings-avatar.jpg) no-repeat center center;
+      left: 50%;
+      background: url(../img/ka.jpg) no-repeat center center;
       background-size: cover;       
     }
   }
@@ -723,5 +769,10 @@ crtOff::after {
     -o-transform: scale(0.7);
     -webkit-transform: scale(0.7);
     transform: scale(0.7);
+  }
+}
+@media screen and (max-width: 1000px) {
+    .conteneur a {
+    font-size: 1em;
   }
 }
