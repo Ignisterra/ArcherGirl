@@ -1,5 +1,5 @@
 /* Reset css*/
-/* line 5, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,45 +21,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -88,12 +88,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
  */
 /* theme files */
 /************ STYLE GENERAL *************/
-/* line 3, scss/_03-custom.scss */
+/* line 2, scss/_03-custom.scss */
 body {
   background-color: #020304;
 }
 
-/* line 7, scss/_03-custom.scss */
+/* line 6, scss/_03-custom.scss */
 .clearfix:after {
   clear: both;
   content: '.';
@@ -102,42 +102,42 @@ body {
   visibility: hidden;
 }
 
-/* line 15, scss/_03-custom.scss */
+/* line 14, scss/_03-custom.scss */
 a {
   color: black;
   text-decoration: none;
 }
 
-/* line 20, scss/_03-custom.scss */
+/* line 19, scss/_03-custom.scss */
 main {
   margin-top: 110px;
 }
 
-/* line 23, scss/_03-custom.scss */
+/* line 22, scss/_03-custom.scss */
 h1, h2, h3, a, p, li {
   font-family: sans-serif;
 }
 
-/* line 26, scss/_03-custom.scss */
+/* line 25, scss/_03-custom.scss */
 h1, h2, h3 {
   text-transform: uppercase;
 }
 
-/* line 29, scss/_03-custom.scss */
+/* line 28, scss/_03-custom.scss */
 p, li {
   font-style: Helvetica, Arial, sans-serif;
 }
 
-/* line 32, scss/_03-custom.scss */
+/* line 31, scss/_03-custom.scss */
 h2 {
   text-align: center;
   font-size: 2em;
-  margin: 30px 0 80px;
+  margin: 30px 0;
   color: white;
 }
 
 /**************** HEADER ****************/
-/* line 41, scss/_03-custom.scss */
+/* line 40, scss/_03-custom.scss */
 header {
   background: #fff;
   width: 100%;
@@ -147,13 +147,13 @@ header {
   transition: top 0.3s;
   z-index: 1000;
 }
-/* line 49, scss/_03-custom.scss */
+/* line 48, scss/_03-custom.scss */
 header .head {
   height: 80px;
   box-sizing: border-box;
   border-bottom: solid black 1px;
 }
-/* line 53, scss/_03-custom.scss */
+/* line 52, scss/_03-custom.scss */
 header .head h1 {
   position: relative;
   float: left;
@@ -161,7 +161,7 @@ header .head h1 {
   padding-left: 40px;
   z-index: 1006;
 }
-/* line 59, scss/_03-custom.scss */
+/* line 58, scss/_03-custom.scss */
 header .head h1 a {
   font-size: 20px;
   font-weight: 900;
@@ -169,7 +169,7 @@ header .head h1 a {
   text-transform: uppercase;
   display: block;
 }
-/* line 67, scss/_03-custom.scss */
+/* line 66, scss/_03-custom.scss */
 header .head .burger {
   position: relative;
   float: right;
@@ -181,7 +181,7 @@ header .head .burger {
   padding: 20px;
   transition: 0.6s cubic-bezier(0.075, 0.82, 0.165, 1) all;
 }
-/* line 77, scss/_03-custom.scss */
+/* line 76, scss/_03-custom.scss */
 header .head .burger span {
   display: block;
   width: 40px;
@@ -190,42 +190,42 @@ header .head .burger span {
   background: #020304;
   transition: 0.6s cubic-bezier(0.075, 0.82, 0.165, 1) all;
 }
-/* line 86, scss/_03-custom.scss */
+/* line 85, scss/_03-custom.scss */
 header .head .burger:hover span {
   margin: 10px 0;
 }
-/* line 89, scss/_03-custom.scss */
+/* line 88, scss/_03-custom.scss */
 header .head .burger:hover:not(.open) {
   margin-top: -4px !important;
 }
-/* line 95, scss/_03-custom.scss */
+/* line 94, scss/_03-custom.scss */
 header .head .open {
   margin-top: 18px;
 }
-/* line 98, scss/_03-custom.scss */
+/* line 97, scss/_03-custom.scss */
 header .head .open span:nth-child(1) {
   transform: rotate(45deg);
   margin: 0;
 }
-/* line 102, scss/_03-custom.scss */
+/* line 101, scss/_03-custom.scss */
 header .head .open span:nth-child(2) {
   transform: translateX(15px);
   opacity: 0;
 }
-/* line 106, scss/_03-custom.scss */
+/* line 105, scss/_03-custom.scss */
 header .head .open span:nth-child(3) {
   transform: rotate(-45deg);
   margin: -18px 0;
 }
-/* line 112, scss/_03-custom.scss */
+/* line 111, scss/_03-custom.scss */
 header .head .open:hover {
   transform: scale(1);
 }
-/* line 115, scss/_03-custom.scss */
+/* line 114, scss/_03-custom.scss */
 header .head .open:hover span:nth-child(3) {
   margin: -30px 0;
 }
-/* line 122, scss/_03-custom.scss */
+/* line 121, scss/_03-custom.scss */
 header nav {
   background: white;
   position: fixed;
@@ -239,12 +239,12 @@ header nav {
   overflow: hidden;
   visibility: hidden;
 }
-/* line 134, scss/_03-custom.scss */
+/* line 133, scss/_03-custom.scss */
 header nav ul {
   width: 100%;
   text-align: center;
 }
-/* line 137, scss/_03-custom.scss */
+/* line 136, scss/_03-custom.scss */
 header nav ul li {
   position: absolute;
   width: 100%;
@@ -253,7 +253,7 @@ header nav ul li {
   transition-delay: 0s;
   box-sizing: border-box;
 }
-/* line 144, scss/_03-custom.scss */
+/* line 143, scss/_03-custom.scss */
 header nav ul li a {
   width: 100%;
   text-transform: uppercase;
@@ -264,25 +264,25 @@ header nav ul li a {
   line-height: 30vh;
   font-size: 2em;
 }
-/* line 154, scss/_03-custom.scss */
+/* line 153, scss/_03-custom.scss */
 header nav ul li:not(:last-child) {
   border-bottom: solid black 1px;
 }
-/* line 157, scss/_03-custom.scss */
+/* line 156, scss/_03-custom.scss */
 header nav ul li:nth-child(2) {
   top: 30vh;
 }
-/* line 160, scss/_03-custom.scss */
+/* line 159, scss/_03-custom.scss */
 header nav ul li:nth-child(3) {
   top: 60vh;
 }
-/* line 166, scss/_03-custom.scss */
+/* line 165, scss/_03-custom.scss */
 header nav.open-nav {
   visibility: visible;
   height: 100%;
   transition: 0.8s cubic-bezier(0.075, 0.82, 0.165, 1) all;
 }
-/* line 171, scss/_03-custom.scss */
+/* line 170, scss/_03-custom.scss */
 header nav.open-nav ul li {
   opacity: 1;
   transition: 0.8s cubic-bezier(0.8, 0.165, 0.82, 0.075) all;
