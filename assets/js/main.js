@@ -1,4 +1,4 @@
-/* MANU BURGER */
+/* MENU BURGER */
 
 $(function () {
   // afficher cacher le menu	
@@ -53,5 +53,3 @@ function hideMenu() {
 			}
 		}
 }
-
-
