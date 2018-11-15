@@ -1,9 +1,5 @@
 /* Reset css*/
-<<<<<<< HEAD
 /* line 5, ../../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-=======
-/* line 5, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
->>>>>>> c108bff34efd2284b5a4a585e3ecc4d9d38a5104
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -25,77 +21,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-<<<<<<< HEAD
 /* line 22, ../../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-=======
-/* line 22, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
->>>>>>> c108bff34efd2284b5a4a585e3ecc4d9d38a5104
 html {
   line-height: 1;
 }
 
-<<<<<<< HEAD
 /* line 24, ../../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-=======
-/* line 24, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
->>>>>>> c108bff34efd2284b5a4a585e3ecc4d9d38a5104
 ol, ul {
   list-style: none;
 }
 
-<<<<<<< HEAD
 /* line 26, ../../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-=======
-/* line 26, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
->>>>>>> c108bff34efd2284b5a4a585e3ecc4d9d38a5104
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-<<<<<<< HEAD
 /* line 28, ../../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-=======
-/* line 28, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
->>>>>>> c108bff34efd2284b5a4a585e3ecc4d9d38a5104
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-<<<<<<< HEAD
 /* line 30, ../../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
 /* line 103, ../../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-=======
-/* line 30, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-q, blockquote {
-  quotes: none;
-}
-/* line 103, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
->>>>>>> c108bff34efd2284b5a4a585e3ecc4d9d38a5104
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-<<<<<<< HEAD
 /* line 32, ../../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-=======
-/* line 32, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
->>>>>>> c108bff34efd2284b5a4a585e3ecc4d9d38a5104
 a img {
   border: none;
 }
 
-<<<<<<< HEAD
 /* line 116, ../../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-=======
-/* line 116, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
->>>>>>> c108bff34efd2284b5a4a585e3ecc4d9d38a5104
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -124,16 +88,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
  */
 /* theme files */
 /************ STYLE GENERAL *************/
-/* line 3, scss/_03-custom.scss */
-<<<<<<< HEAD
+/* line 4, scss/_03-custom.scss */
 body {
   background-color: #020304;
   background: url("../../assets/img/RetroArcade.jpg");
 }
 
-/* line 8, scss/_03-custom.scss */
-=======
->>>>>>> c108bff34efd2284b5a4a585e3ecc4d9d38a5104
+/* line 10, scss/_03-custom.scss */
 .clearfix:after {
   clear: both;
   content: '.';
@@ -142,57 +103,33 @@ body {
   visibility: hidden;
 }
 
-<<<<<<< HEAD
-/* line 16, scss/_03-custom.scss */
-=======
-/* line 11, scss/_03-custom.scss */
->>>>>>> c108bff34efd2284b5a4a585e3ecc4d9d38a5104
+/* line 18, scss/_03-custom.scss */
 a {
   color: black;
   text-decoration: none;
 }
 
-<<<<<<< HEAD
-/* line 21, scss/_03-custom.scss */
-=======
-/* line 16, scss/_03-custom.scss */
->>>>>>> c108bff34efd2284b5a4a585e3ecc4d9d38a5104
+/* line 23, scss/_03-custom.scss */
 main {
   margin-top: 110px;
 }
 
-<<<<<<< HEAD
-/* line 24, scss/_03-custom.scss */
-=======
-/* line 19, scss/_03-custom.scss */
->>>>>>> c108bff34efd2284b5a4a585e3ecc4d9d38a5104
+/* line 26, scss/_03-custom.scss */
 h1, h2, h3, a, p, li {
   font-family: sans-serif;
 }
 
-<<<<<<< HEAD
-/* line 27, scss/_03-custom.scss */
-=======
-/* line 22, scss/_03-custom.scss */
->>>>>>> c108bff34efd2284b5a4a585e3ecc4d9d38a5104
+/* line 29, scss/_03-custom.scss */
 h1, h2, h3 {
   text-transform: uppercase;
 }
 
-<<<<<<< HEAD
-/* line 30, scss/_03-custom.scss */
-=======
-/* line 25, scss/_03-custom.scss */
->>>>>>> c108bff34efd2284b5a4a585e3ecc4d9d38a5104
+/* line 32, scss/_03-custom.scss */
 p, li {
   font-style: Helvetica, Arial, sans-serif;
 }
 
-<<<<<<< HEAD
-/* line 33, scss/_03-custom.scss */
-=======
-/* line 28, scss/_03-custom.scss */
->>>>>>> c108bff34efd2284b5a4a585e3ecc4d9d38a5104
+/* line 35, scss/_03-custom.scss */
 h2 {
   text-align: center;
   font-size: 2em;
@@ -201,11 +138,7 @@ h2 {
 }
 
 /**************** HEADER ****************/
-<<<<<<< HEAD
-/* line 42, scss/_03-custom.scss */
-=======
-/* line 37, scss/_03-custom.scss */
->>>>>>> c108bff34efd2284b5a4a585e3ecc4d9d38a5104
+/* line 44, scss/_03-custom.scss */
 header {
   background: #fff;
   width: 100%;
@@ -215,21 +148,13 @@ header {
   transition: top 0.3s;
   z-index: 1000;
 }
-<<<<<<< HEAD
-/* line 50, scss/_03-custom.scss */
-=======
-/* line 45, scss/_03-custom.scss */
->>>>>>> c108bff34efd2284b5a4a585e3ecc4d9d38a5104
+/* line 52, scss/_03-custom.scss */
 header .head {
   height: 80px;
   box-sizing: border-box;
   border-bottom: solid black 1px;
 }
-<<<<<<< HEAD
-/* line 54, scss/_03-custom.scss */
-=======
-/* line 49, scss/_03-custom.scss */
->>>>>>> c108bff34efd2284b5a4a585e3ecc4d9d38a5104
+/* line 56, scss/_03-custom.scss */
 header .head h1 {
   position: relative;
   float: left;
@@ -237,11 +162,7 @@ header .head h1 {
   padding-left: 40px;
   z-index: 1006;
 }
-<<<<<<< HEAD
-/* line 60, scss/_03-custom.scss */
-=======
-/* line 55, scss/_03-custom.scss */
->>>>>>> c108bff34efd2284b5a4a585e3ecc4d9d38a5104
+/* line 62, scss/_03-custom.scss */
 header .head h1 a {
   font-size: 20px;
   font-weight: 900;
@@ -249,11 +170,7 @@ header .head h1 a {
   text-transform: uppercase;
   display: block;
 }
-<<<<<<< HEAD
-/* line 68, scss/_03-custom.scss */
-=======
-/* line 63, scss/_03-custom.scss */
->>>>>>> c108bff34efd2284b5a4a585e3ecc4d9d38a5104
+/* line 70, scss/_03-custom.scss */
 header .head .burger {
   position: relative;
   float: right;
@@ -265,11 +182,7 @@ header .head .burger {
   padding: 20px;
   transition: 0.6s cubic-bezier(0.075, 0.82, 0.165, 1) all;
 }
-<<<<<<< HEAD
-/* line 78, scss/_03-custom.scss */
-=======
-/* line 73, scss/_03-custom.scss */
->>>>>>> c108bff34efd2284b5a4a585e3ecc4d9d38a5104
+/* line 80, scss/_03-custom.scss */
 header .head .burger span {
   display: block;
   width: 40px;
@@ -278,78 +191,42 @@ header .head .burger span {
   background: #020304;
   transition: 0.6s cubic-bezier(0.075, 0.82, 0.165, 1) all;
 }
-<<<<<<< HEAD
-/* line 87, scss/_03-custom.scss */
+/* line 89, scss/_03-custom.scss */
 header .head .burger:hover span {
   margin: 10px 0;
 }
-/* line 90, scss/_03-custom.scss */
+/* line 92, scss/_03-custom.scss */
 header .head .burger:hover:not(.open) {
   margin-top: -4px !important;
 }
-/* line 96, scss/_03-custom.scss */
+/* line 98, scss/_03-custom.scss */
 header .head .open {
   margin-top: 18px;
 }
-/* line 99, scss/_03-custom.scss */
-=======
-/* line 82, scss/_03-custom.scss */
-header .head .burger:hover span {
-  margin: 10px 0;
-}
-/* line 85, scss/_03-custom.scss */
-header .head .burger:hover:not(.open) {
-  margin-top: -4px !important;
-}
-/* line 91, scss/_03-custom.scss */
-header .head .open {
-  margin-top: 18px;
-}
-/* line 94, scss/_03-custom.scss */
->>>>>>> c108bff34efd2284b5a4a585e3ecc4d9d38a5104
+/* line 101, scss/_03-custom.scss */
 header .head .open span:nth-child(1) {
   transform: rotate(45deg);
   margin: 0;
 }
-<<<<<<< HEAD
-/* line 103, scss/_03-custom.scss */
-=======
-/* line 98, scss/_03-custom.scss */
->>>>>>> c108bff34efd2284b5a4a585e3ecc4d9d38a5104
+/* line 105, scss/_03-custom.scss */
 header .head .open span:nth-child(2) {
   transform: translateX(15px);
   opacity: 0;
 }
-<<<<<<< HEAD
-/* line 107, scss/_03-custom.scss */
-=======
-/* line 102, scss/_03-custom.scss */
->>>>>>> c108bff34efd2284b5a4a585e3ecc4d9d38a5104
+/* line 109, scss/_03-custom.scss */
 header .head .open span:nth-child(3) {
   transform: rotate(-45deg);
   margin: -18px 0;
 }
-<<<<<<< HEAD
-/* line 113, scss/_03-custom.scss */
+/* line 115, scss/_03-custom.scss */
 header .head .open:hover {
   transform: scale(1);
-}
-/* line 116, scss/_03-custom.scss */
-header .head .open:hover span:nth-child(3) {
-  margin: -30px 0;
-}
-/* line 123, scss/_03-custom.scss */
-=======
-/* line 108, scss/_03-custom.scss */
-header .head .open:hover {
-  transform: scale(1);
-}
-/* line 111, scss/_03-custom.scss */
-header .head .open:hover span:nth-child(3) {
-  margin: -30px 0;
 }
 /* line 118, scss/_03-custom.scss */
->>>>>>> c108bff34efd2284b5a4a585e3ecc4d9d38a5104
+header .head .open:hover span:nth-child(3) {
+  margin: -30px 0;
+}
+/* line 125, scss/_03-custom.scss */
 header nav {
   background: white;
   position: fixed;
@@ -363,20 +240,12 @@ header nav {
   overflow: hidden;
   visibility: hidden;
 }
-<<<<<<< HEAD
-/* line 135, scss/_03-custom.scss */
-=======
-/* line 130, scss/_03-custom.scss */
->>>>>>> c108bff34efd2284b5a4a585e3ecc4d9d38a5104
+/* line 137, scss/_03-custom.scss */
 header nav ul {
   width: 100%;
   text-align: center;
 }
-<<<<<<< HEAD
-/* line 138, scss/_03-custom.scss */
-=======
-/* line 133, scss/_03-custom.scss */
->>>>>>> c108bff34efd2284b5a4a585e3ecc4d9d38a5104
+/* line 140, scss/_03-custom.scss */
 header nav ul li {
   position: absolute;
   width: 100%;
@@ -385,11 +254,7 @@ header nav ul li {
   transition-delay: 0s;
   box-sizing: border-box;
 }
-<<<<<<< HEAD
-/* line 145, scss/_03-custom.scss */
-=======
-/* line 140, scss/_03-custom.scss */
->>>>>>> c108bff34efd2284b5a4a585e3ecc4d9d38a5104
+/* line 147, scss/_03-custom.scss */
 header nav ul li a {
   width: 100%;
   text-transform: uppercase;
@@ -400,45 +265,25 @@ header nav ul li a {
   line-height: 30vh;
   font-size: 2em;
 }
-<<<<<<< HEAD
-/* line 155, scss/_03-custom.scss */
+/* line 157, scss/_03-custom.scss */
 header nav ul li:not(:last-child) {
   border-bottom: solid black 1px;
 }
-/* line 158, scss/_03-custom.scss */
+/* line 160, scss/_03-custom.scss */
 header nav ul li:nth-child(2) {
   top: 30vh;
 }
-/* line 161, scss/_03-custom.scss */
+/* line 163, scss/_03-custom.scss */
 header nav ul li:nth-child(3) {
   top: 60vh;
 }
-/* line 167, scss/_03-custom.scss */
-=======
-/* line 150, scss/_03-custom.scss */
-header nav ul li:not(:last-child) {
-  border-bottom: solid black 1px;
-}
-/* line 153, scss/_03-custom.scss */
-header nav ul li:nth-child(2) {
-  top: 30vh;
-}
-/* line 156, scss/_03-custom.scss */
-header nav ul li:nth-child(3) {
-  top: 60vh;
-}
-/* line 162, scss/_03-custom.scss */
->>>>>>> c108bff34efd2284b5a4a585e3ecc4d9d38a5104
+/* line 169, scss/_03-custom.scss */
 header nav.open-nav {
   visibility: visible;
   height: 100%;
   transition: 0.8s cubic-bezier(0.075, 0.82, 0.165, 1) all;
 }
-<<<<<<< HEAD
-/* line 172, scss/_03-custom.scss */
-=======
-/* line 167, scss/_03-custom.scss */
->>>>>>> c108bff34efd2284b5a4a585e3ecc4d9d38a5104
+/* line 174, scss/_03-custom.scss */
 header nav.open-nav ul li {
   opacity: 1;
   transition: 0.8s cubic-bezier(0.8, 0.165, 0.82, 0.075) all;

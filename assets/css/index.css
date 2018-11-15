@@ -18,21 +18,18 @@
 /* Game cotainer */
 /* theme files */
 /**************** MAIN INDEX ****************/
-<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css?family=Press+Start+2P");
-=======
-/* line 2, scss/_04-index.scss */
+/* line 7, scss/_04-index.scss */
 body {
   background-color: #020304;
 }
 
->>>>>>> c108bff34efd2284b5a4a585e3ecc4d9d38a5104
-/* line 5, scss/_04-index.scss */
+/* line 11, scss/_04-index.scss */
 main {
   color: #fff;
   /* margin-top: 110px; */
 }
-/* line 8, scss/_04-index.scss */
+/* line 14, scss/_04-index.scss */
 main .game {
   margin: auto;
   width: 800px;
@@ -40,19 +37,19 @@ main .game {
   border: solid  white 1px;
   margin-bottom: 70px;
 }
-/* line 16, scss/_04-index.scss */
+/* line 22, scss/_04-index.scss */
 main #glauncher .window {
   position: relative;
   overflow: hidden;
   height: 600px;
   background: repeating-linear-gradient(to bottom, #0f0a1e, #0f0a1e 2px, #140e29 2px, #140e29 4px);
 }
-/* line 21, scss/_04-index.scss */
+/* line 27, scss/_04-index.scss */
 main #glauncher .window .scroller {
   position: absolute;
   width: 800px;
 }
-/* line 24, scss/_04-index.scss */
+/* line 30, scss/_04-index.scss */
 main #glauncher .window .scroller .content {
   z-index: 200;
   padding: 50px;
@@ -60,26 +57,25 @@ main #glauncher .window .scroller .content {
   text-align: center;
   color: #fff;
 }
-/* line 30, scss/_04-index.scss */
+/* line 36, scss/_04-index.scss */
 main #glauncher .window .scroller .content h3 {
   font-size: 1.6em;
   margin: 30px 0 80px;
 }
-/* line 34, scss/_04-index.scss */
+/* line 40, scss/_04-index.scss */
 main #glauncher .window .scroller .content p {
   text-align: left;
   text-indent: 30px;
   line-height: 1.5em;
   margin-top: 10px;
 }
-/* line 40, scss/_04-index.scss */
+/* line 46, scss/_04-index.scss */
 main #glauncher .window .scroller .content ul {
   text-align: left;
   margin: 10px 0 50px 50px;
   line-height: 1.5em;
 }
-/* line 45, scss/_04-index.scss */
-<<<<<<< HEAD
+/* line 51, scss/_04-index.scss */
 main #glauncher .window .scroller .content #launch {
   font-family: 'Press Start 2P', cursive;
   height: 90px;
@@ -93,28 +89,7 @@ main #glauncher .window .scroller .content #launch {
   text-shadow: -2px 0 0 #fdff2a, -4px 0 0 #df4a42, 2px 0 0 #91fcfe, 4px 0 0 #4405fc;
   animation: blink 1s  infinite;
 }
-/* line 63, scss/_04-index.scss */
-=======
-main #glauncher .window .scroller .content a {
-  box-sizing: border-box;
-  background-color: white;
-  color: black;
-  margin: 70px 0;
-  font-size: 2em;
-  line-height: 3em;
-  padding: 7px 20px;
-  border: 3px solid black;
-  border-radius: 10% / 50%;
-  transition: .3s ease;
-}
-/* line 56, scss/_04-index.scss */
-main #glauncher .window .scroller .content a:hover {
-  background-color: black;
-  color: white;
-  transition: .3s ease;
-}
-/* line 67, scss/_04-index.scss */
->>>>>>> c108bff34efd2284b5a4a585e3ecc4d9d38a5104
+/* line 69, scss/_04-index.scss */
 main #game_container {
   display: none;
 }

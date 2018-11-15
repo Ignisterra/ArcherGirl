@@ -19,7 +19,7 @@
 /* theme files */
 /* line 1, scss/_05-anime.scss */
 body {
-  background-color: #a537fd;
+  background-color: #a537fd !important;
 }
 
 /**************** MAIN ANIME ****************/
