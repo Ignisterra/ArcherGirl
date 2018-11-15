@@ -25,8 +25,8 @@ body {
 
 /* line 56, scss/_06-leaderboard.scss */
 .arcade-machine {
-  height: 600px;
-  width: 700px;
+  height: 620px;
+  width: 750px;
   position: relative;
   margin: 35px auto;
   perspective: 35em;
@@ -150,9 +150,8 @@ body {
   border-radius: 90px 93px 93px 93px / 15px 15px 15px 15px;
   overflow: hidden;
   text-align: center;
-  cursor: pointer;
 }
-/* line 147, scss/_06-leaderboard.scss */
+/* line 146, scss/_06-leaderboard.scss */
 .arcade-machine .screen-container .screen-display {
   position: absolute;
   width: 100%;
@@ -161,15 +160,38 @@ body {
   background-image: repeating-linear-gradient(0deg, #313332, #313332 15px, #4a4d4c 15px, #4a4d4c 16px);
   animation: translate 1s infinite;
 }
-/* line 162, scss/_06-leaderboard.scss */
+/* line 161, scss/_06-leaderboard.scss */
 .arcade-machine .screen-container .screen h2 {
   position: absolute;
-  top: 50%;
-  left: 4%;
+  top: -10%;
+  left: 8%;
   color: #e0e0e0;
   font-family: "Orbitron", sans-serif, sans-serif;
 }
-/* line 171, scss/_06-leaderboard.scss */
+/* line 168, scss/_06-leaderboard.scss */
+.arcade-machine .screen-container .screen #lead {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  text-align: left;
+  width: 100%;
+}
+/* line 174, scss/_06-leaderboard.scss */
+.arcade-machine .screen-container .screen #lead li {
+  color: #e0e0e0;
+  font-family: "Orbitron", sans-serif, sans-serif;
+}
+/* line 177, scss/_06-leaderboard.scss */
+.arcade-machine .screen-container .screen #lead li span:nth-child(2) {
+  position: absolute;
+  left: 11%;
+}
+/* line 181, scss/_06-leaderboard.scss */
+.arcade-machine .screen-container .screen #lead li span:last-child {
+  position: absolute;
+  left: 55%;
+}
+/* line 189, scss/_06-leaderboard.scss */
 .arcade-machine .screen-container .joystick {
   height: 6%;
   width: 5%;
@@ -181,7 +203,7 @@ body {
   border: 5px solid #4c4c4c;
   z-index: 3;
 }
-/* line 180, scss/_06-leaderboard.scss */
+/* line 198, scss/_06-leaderboard.scss */
 .arcade-machine .screen-container .joystick:before {
   height: 90%;
   width: 65%;
@@ -192,7 +214,7 @@ body {
   content: '';
   border-radius: 50%;
 }
-/* line 189, scss/_06-leaderboard.scss */
+/* line 207, scss/_06-leaderboard.scss */
 .arcade-machine .screen-container .joystick .stick {
   height: 200%;
   width: 40%;
@@ -202,7 +224,7 @@ body {
   background: #4c4c4c;
   content: '';
 }
-/* line 196, scss/_06-leaderboard.scss */
+/* line 214, scss/_06-leaderboard.scss */
 .arcade-machine .screen-container .joystick .stick:before {
   height: 100%;
   width: 150%;
@@ -213,7 +235,7 @@ body {
   background: #4c4c4c;
   content: '';
 }
-/* line 210, scss/_06-leaderboard.scss */
+/* line 228, scss/_06-leaderboard.scss */
 .arcade-machine .board {
   height: 20%;
   width: 66%;
@@ -223,7 +245,7 @@ body {
   background: #4B5B61;
   transform: rotateX(70deg);
 }
-/* line 215, scss/_06-leaderboard.scss */
+/* line 233, scss/_06-leaderboard.scss */
 .arcade-machine .board:before, .arcade-machine .board:after {
   height: 92%;
   width: 4%;
@@ -234,15 +256,15 @@ body {
   border: 5px solid #4c4c4c;
   z-index: 2;
 }
-/* line 225, scss/_06-leaderboard.scss */
+/* line 243, scss/_06-leaderboard.scss */
 .arcade-machine .board:before {
   left: -6%;
 }
-/* line 226, scss/_06-leaderboard.scss */
+/* line 244, scss/_06-leaderboard.scss */
 .arcade-machine .board:after {
   right: -6%;
 }
-/* line 228, scss/_06-leaderboard.scss */
+/* line 246, scss/_06-leaderboard.scss */
 .arcade-machine .board .button {
   height: 15%;
   width: 6%;
@@ -252,22 +274,22 @@ body {
   border-radius: 50%;
   border: 5px solid #4c4c4c;
 }
-/* line 237, scss/_06-leaderboard.scss */
+/* line 255, scss/_06-leaderboard.scss */
 .arcade-machine .board .button-a {
   background: #BFD3C1;
   left: 40%;
 }
-/* line 241, scss/_06-leaderboard.scss */
+/* line 259, scss/_06-leaderboard.scss */
 .arcade-machine .board .button-b {
   background: #68A691;
   left: 55%;
 }
-/* line 245, scss/_06-leaderboard.scss */
+/* line 263, scss/_06-leaderboard.scss */
 .arcade-machine .board .button-c {
   background: #07BEB8;
   left: 70%;
 }
-/* line 251, scss/_06-leaderboard.scss */
+/* line 269, scss/_06-leaderboard.scss */
 .arcade-machine .bottom {
   height: 10%;
   width: 71%;
@@ -277,7 +299,7 @@ body {
   background: white;
   border: 5px solid #4c4c4c;
 }
-/* line 256, scss/_06-leaderboard.scss */
+/* line 274, scss/_06-leaderboard.scss */
 .arcade-machine .bottom:before, .arcade-machine .bottom:after {
   height: 98%;
   width: 4%;
@@ -288,181 +310,13 @@ body {
   border: 5px solid #4c4c4c;
   z-index: 2;
 }
-/* line 266, scss/_06-leaderboard.scss */
+/* line 284, scss/_06-leaderboard.scss */
 .arcade-machine .bottom:before {
   left: -5.8%;
 }
-/* line 267, scss/_06-leaderboard.scss */
+/* line 285, scss/_06-leaderboard.scss */
 .arcade-machine .bottom:after {
   right: -5.9%;
-}
-
-/* line 277, scss/_06-leaderboard.scss */
-.alien-container {
-  position: absolute;
-  top: 20%;
-  left: 35%;
-  height: 30%;
-  width: 30%;
-  animation: bounce .8s infinite;
-}
-
-/* line 288, scss/_06-leaderboard.scss */
-.alien .ear {
-  position: absolute;
-  top: 14%;
-  height: 13%;
-  width: 10%;
-  background: #B4DEEC;
-}
-/* line 294, scss/_06-leaderboard.scss */
-.alien .ear-left {
-  left: 35%;
-}
-/* line 295, scss/_06-leaderboard.scss */
-.alien .ear-right {
-  right: 35%;
-}
-/* line 296, scss/_06-leaderboard.scss */
-.alien .ear:before {
-  position: absolute;
-  top: -100%;
-  height: 100%;
-  width: 100%;
-  background: #B4DEEC;
-  content: '';
-}
-/* line 304, scss/_06-leaderboard.scss */
-.alien .ear-left:before {
-  left: -100%;
-}
-/* line 305, scss/_06-leaderboard.scss */
-.alien .ear-right:before {
-  right: -100%;
-}
-/* line 308, scss/_06-leaderboard.scss */
-.alien .head-top {
-  position: absolute;
-  top: 26%;
-  left: 20%;
-  height: 15%;
-  width: 60%;
-  background: #B4DEEC;
-}
-/* line 317, scss/_06-leaderboard.scss */
-.alien .head {
-  position: absolute;
-  top: 40%;
-  left: 11.5%;
-  height: 15%;
-  width: 77%;
-  background: #B4DEEC;
-}
-/* line 324, scss/_06-leaderboard.scss */
-.alien .head .eye {
-  position: absolute;
-  top: -5%;
-  height: 77%;
-  width: 12%;
-  background: #313332;
-}
-/* line 330, scss/_06-leaderboard.scss */
-.alien .head .eye-left {
-  left: 25%;
-}
-/* line 331, scss/_06-leaderboard.scss */
-.alien .head .eye-right {
-  right: 25%;
-}
-/* line 335, scss/_06-leaderboard.scss */
-.alien .body {
-  position: absolute;
-  top: 54%;
-  left: 10%;
-  height: 20%;
-  width: 80%;
-  background: #B4DEEC;
-}
-/* line 343, scss/_06-leaderboard.scss */
-.alien .body:before, .alien .body:after {
-  height: 220%;
-  width: 13%;
-  background: #B4DEEC;
-  position: absolute;
-  content: '';
-}
-/* line 351, scss/_06-leaderboard.scss */
-.alien .body:before {
-  left: -10%;
-}
-/* line 352, scss/_06-leaderboard.scss */
-.alien .body:after {
-  right: -10%;
-}
-/* line 355, scss/_06-leaderboard.scss */
-.alien .arm {
-  position: absolute;
-  top: 85%;
-  height: 13%;
-  width: 10%;
-  background: #B4DEEC;
-}
-/* line 361, scss/_06-leaderboard.scss */
-.alien .arm-left {
-  left: 35%;
-}
-/* line 362, scss/_06-leaderboard.scss */
-.alien .arm-right {
-  right: 35%;
-}
-/* line 363, scss/_06-leaderboard.scss */
-.alien .arm:before {
-  position: absolute;
-  top: -100%;
-  height: 100%;
-  width: 100%;
-  background: #B4DEEC;
-  content: '';
-}
-/* line 371, scss/_06-leaderboard.scss */
-.alien .arm-left:before {
-  left: -100%;
-}
-/* line 372, scss/_06-leaderboard.scss */
-.alien .arm-right:before {
-  right: -100%;
-}
-
-/* line 381, scss/_06-leaderboard.scss */
-footer {
-  text-align: center;
-  font-family: 'Quicksand', sans-serif;
-  margin-top: -30px;
-}
-/* line 385, scss/_06-leaderboard.scss */
-footer h3 {
-  color: #4B5B61;
-  font-size: 1.2rem;
-  margin-bottom: 5px;
-}
-/* line 389, scss/_06-leaderboard.scss */
-footer h3 span {
-  color: #2995aa;
-}
-/* line 393, scss/_06-leaderboard.scss */
-footer h4 {
-  color: #87aebc;
-  font-size: 1rem;
-  margin-bottom: 10px;
-}
-/* line 398, scss/_06-leaderboard.scss */
-footer p {
-  font-size: .9rem;
-  color: #7a9098;
-}
-/* line 401, scss/_06-leaderboard.scss */
-footer p a {
-  color: #3d9cbf;
 }
 
 @keyframes bounce {
