@@ -177,7 +177,7 @@ function moveToWindow(player, direction){
 
 function preload(){
 
-        this.load.image('level1_background', 'assets/game_assets/background/level1_background_temp.png');
+        this.load.image('level1_background', 'assets/game_assets/background/level1_background_temp2.png');
         this.load.image('game_over_background', 'assets/game_assets/background/game_over.png');
         this.load.image('metoo_background', 'assets/game_assets/background/metoo.png');
 
