@@ -1,7 +1,4 @@
-body{
-  background: url("../../assets/img/mur.jpg") no-repeat center center;
-  background-size: cover;
-}
+
 @import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
 
 
@@ -16,7 +13,10 @@ body{
 }
 
 
-// body{background:#404040;}
+body{
+  background: url("../../assets/img/mur.jpg") no-repeat center center;
+  background-size: cover;
+}
 .conteneur{
   width: 400px; 
   height: 300px; 
