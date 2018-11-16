@@ -4,18 +4,18 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="assets/css/main.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/anime.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/index.css">
 
-  <title>Archer Girl - To be Hero</title>
-  
+  <title>Archer Girl - Home</title>
+
+  <!--Libraries-->
   <script src="assets/js/lib/jquery.min.js"></script>
   <script src="assets/js/lib/phaser.min.js"></script>
 
-
   <!-- FIREBASE App is always required and must be first -->
   <script src="https://www.gstatic.com/firebasejs/5.5.6/firebase-app.js"></script>
+
 
   <!-- Add additional services that you want to use -->
   <script src="https://www.gstatic.com/firebasejs/5.5.6/firebase-auth.js"></script>
@@ -27,8 +27,9 @@
   <!-- javascript perso -->
   <script src="assets/js/firebase.js"></script>
   <script src="assets/js/main.js"></script>
-  <script src="assets/js/tv.js"></script>
 
+  <script src="assets/js/functions.js"></script>
+  <script type="module" src="assets/js/game.js"></script>
 </head>
 <body>
 
@@ -45,7 +46,7 @@
     </div>
     <nav>
       <ul>
-         <li><a href="index.html">Le jeu : Archer Girl</a></li>
+        <li><a href="index.html">Le jeu : Archer Girl</a></li>
         <li><a href="leader_board.html">Leader Board</a></li>
         <li><a href="anime.html">Découvrir les animes</a></li>
       </ul>
@@ -54,43 +55,20 @@
 
   <!------------------- MAIN CONTENT ------------------->
 
-    <main class="hero">
-      <h2 class="retro">To Be Hero</h2>
-      <div class="containbox">
-        <div class="tv">
-          <div class="outerRing">
-            <div class="middleRing">
-              <div class="innerRing">
-                <div class="screen crtOff">
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="sidePanel">
-            <div class="channelBox">
-              <div class="channelScreen"></div>
-              <div class="power"></div>
-              <span class="powerText">Power</span>
-              <div class="channelSelect">
-                <button class="buttons" id="upButton"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
-                <button class="buttons" id="downButton"><i class="fa fa-arrow-down" aria-hidden="true"></i></button>
-              </div>
-              <span class="channelText">Channel</span>
-            </div>
-          </div>
-          <div class="base"></div>
-        </div>
-      </div>
-      
-    </main>
+  <main style="margin-top: 200px;">
+    <form style="margin: 20px 200px">
+      score <input type="text" name="test" id="inputTest">
+      nom <input type="text" name="test" id="inputName">
+      <button type="button" id="buttonTest" style="padding: 10px 20px"> SEND </button>
+    </form>
+    
+  </main>
 
-
-<!------------------- FOOTER ------------------->
+  <!------------------- FOOTER ------------------->
 
   <footer>
     &copy; 2018 - KYO Gaming Club
   </footer>
-
 
 </body>
 </html>

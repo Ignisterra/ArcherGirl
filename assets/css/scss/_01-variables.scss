@@ -10,7 +10,7 @@ $maximum-columns:              12;     // max number of columns (no)
 
 /* Screen size breakpoints for media queries */
 $l-screen:                     1440px; // max-width for l screens (no)
-$m-screen:                     853px;  // max-width for m screens (no)
+$m-screen:                     840px;  // max-width for m screens (no)
 $m-screen-landscape:           1024px; // max-width for m screens landscape (no)
 $s-screen:                     640px;  // max-width for s screens (no)
 
@@ -33,9 +33,6 @@ $btn-nav-color:                $primary-color;
  ------------*/
 
 $base-font-family:             Helvetica, Arial, sans-serif; 
-$headings-font-family:         Helvetica, Arial, sans-serif; 
-$nav-font-family:              Helvetica, Arial, sans-serif; 
-
 $base-font-size:               16px; // no
 
 /**------------
@@ -44,7 +41,6 @@ $base-font-size:               16px; // no
 $full-height:				   100%;
 $li-height: 				   30%;
 $header-height:				   80px;
-
 
 /**------------
  * Main Game

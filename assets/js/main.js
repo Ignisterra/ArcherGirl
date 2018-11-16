@@ -1,4 +1,4 @@
-/* MANU BURGER */
+/* MENU BURGER */
 
 $(function () {
   // afficher cacher le menu	
@@ -18,11 +18,6 @@ $(function () {
   	$('.open-nav').css('height', 'calc(100% - ' + $("header").css("height") + ')');
   });
 
-
-/*  $('#button-two').click(function(){
-    $('#box-two').css("transform","translate(250px,0)");
-});*/
-
   // lancer le jeu
   $('#launch').click(function(){
     $('#glauncher').hide();
@@ -32,13 +27,13 @@ $(function () {
 
 
 
-
 hideMenu();
+
 
 });
 
 
-/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+/* cacher et aficher la navbar au scroll */
 function hideMenu() {
 		if($('nav').hasClass('open-nav') == false){		
 		var prevScrollpos = window.pageYOffset;
