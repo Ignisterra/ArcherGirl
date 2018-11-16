@@ -116,13 +116,13 @@ body {
 }
 /* line 96, scss/_05-anime.scss */
 .anime .conteneur .to_be_hero {
-  background: url(../img/to-be-hero-anime.jpg) no-repeat center center;
+  background: url(../img/to-be-hero-anime.jpg) no-repeat top center;
   background-size: cover;
 }
 /* line 100, scss/_05-anime.scss */
 .anime .conteneur .kings_avatar {
   left: 50%;
-  background: url(../img/ka.jpg) no-repeat center center;
+  background: url(../img/ka.jpg) no-repeat top center;
   background-size: cover;
 }
 
