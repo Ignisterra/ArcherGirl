@@ -11,11 +11,6 @@ async function sendScore(){
     snapshot.forEach(function(childSnapshot) {
       var item = childSnapshot.val();
       console.log(item);
-      /*var setTab = {
-      	Pos : item.Pos,
-		    Name: item.Name,
-		    Score: item.Score,
-		  }*/
       tab[item.Pos-1] = item;
     });
   console.log(tab);

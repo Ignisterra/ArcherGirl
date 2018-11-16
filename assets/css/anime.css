@@ -18,13 +18,13 @@
 /* Game cotainer */
 /* theme files */
 @import url("https://fonts.googleapis.com/css?family=Press+Start+2P");
-/* line 1, scss/_05-anime.scss */
+/**************** MAIN ANIME ****************/
+/* line 16, scss/_05-anime.scss */
 body {
   background: url("../../assets/img/mur.jpg") no-repeat center center;
   background-size: cover;
 }
 
-/**************** MAIN ANIME ****************/
 /* line 20, scss/_05-anime.scss */
 .conteneur {
   width: 400px;
