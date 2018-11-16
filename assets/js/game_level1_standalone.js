@@ -227,7 +227,7 @@ function create(){
 
     player = this.physics.add.sprite(330, 140, 'ayumi');
 
-    enemy = this.physics.add.sprite(750,500, 'pervert');
+    enemy = this.physics.add.sprite(750,550, 'pervert');
 
     toilet = this.physics.add.sprite(200, 70, 'toilet');
 
@@ -486,7 +486,7 @@ function update(){
 
     if(enemy_dead){
 
-        enemy = this.physics.add.sprite(750,500, 'pervert');
+        enemy = this.physics.add.sprite(750,550, 'pervert');
         enemy.setVelocityX(-70);
         enemy.anims.play('enemy_left', true);
         enemy_dead = false;
