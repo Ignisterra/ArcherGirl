@@ -57,6 +57,7 @@ var toilet_dead;
 var camera;
 var metoo;
 var gameOver;
+var pos;
 var restart_game;
 
 /*Textes*/
@@ -624,16 +625,13 @@ function update(){
                 camera.resetFX();
 
                 this.add.image(400, 300, 'metoo_background');
-/*                retry_text = this.add.text(330, 400, "Retry ?", {
-                    fontSize: "40px",
-                    fill: "#ffffff"
-                } );
 
-                retry_text.setInteractive();
-                retry_text.on('pointerdown', function () {
-                    console.log("retry");
-                    restart_game = true;
-                });*/
+                pos = 1;
+                firebase.database().ref('/leaderBoard/' + pos).set({
+                    Pos : 1,
+                    Name: "metoo",
+                    Score: 999999          
+                });
 
             }
 
@@ -641,11 +639,19 @@ function update(){
                 gameOver = false;
                 camera.resetFX();
 
+                pos = 9;
+                firebase.database().ref('/leaderBoard/' + pos).set({
+                    Pos : 9,
+                    Name: "Tester",
+                    Score: score          
+                });
+
                 this.add.image(400, 300, 'game_over_background');
                 retry_text = this.add.text(330, 400, "Retry ?", {
                     fontSize: "40px",
                     fill: "#ffffff"
                 } );
+
 
                 retry_text.setInteractive();
                 retry_text.on('pointerdown', function () {
